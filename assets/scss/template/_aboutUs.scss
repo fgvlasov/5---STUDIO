@@ -1,0 +1,49 @@
+/*----------------------
+    About Styles 
+------------------------*/
+.axil-about-inner {
+    .section-title{
+        p {
+            &.subtitle-2{
+                padding: 0 14% 0 0;
+                @media #{$lg-layout} {
+                    padding: 0;
+                }
+                @media #{$md-layout} {
+                    padding: 0;
+                }
+                @media #{$sm-layout} {
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+
+// About Shape Position 
+.axil-shape-position {
+    position: relative;
+    .axil-shape-group {
+        .shape {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            &.shape-1 {
+                right: 14%;
+                bottom: 11%;
+                @media #{$sm-layout} {
+                    display: none;
+                }
+            }
+            &.shape-2 {
+                right: 12%;
+                transform: rotate(180deg);
+                bottom: 20%;
+                @media #{$sm-layout} {
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+/* ---------------------------
+    Single Product Styles  
+-------------------------------*/
+
+
+.axil-working-process{
+    display: flex;
+    align-items: center;
+    .thumbnail {
+        .image {
+            img {
+                -webkit-transform: perspective(500px) rotateY(-5deg);
+                transform: perspective(500px) rotateY(-5deg);
+            }
+        }
+    }
+    .content {
+        padding-left: 110px;
+        position: relative;
+        margin-right: 200px;
+        .inner {
+            .section-title {
+                span {
+                    &.process-step-number {
+                        box-sizing: border-box;
+                        height: 149px;
+                        width: 149px;
+                        border: 1px solid #979797;
+                        opacity: 0.2;
+                        line-height: 149px;
+                        display: inline-block;
+                        opacity: 0.2;
+                        color: #737387;
+                        font-size: 60px;
+                        position: absolute;
+                        right: 0;
+                        top: -58px;
+                        border-radius: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    &.text-left {
+        .content {
+            margin-right: 110px;
+            padding-left: 200px;
+        }
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

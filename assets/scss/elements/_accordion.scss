@@ -1,0 +1,170 @@
+/*-----------------------
+    Accordion Styles 
+-------------------------*/
+
+.axil-accordion {
+    .card {
+        border: 0 none;
+        border-bottom: 1px solid #F6F5FA;
+        border-radius: 0;
+        background-color: transparent;
+        .card-header {
+            padding: 20px 0px;
+            margin-bottom: 0;
+            background-color: transparent;
+            border-bottom: 0;
+            &:first-child {
+                border-radius: 0;
+            }
+            h5 {
+                .btn {
+                    &.btn-link {
+                        padding: 0;
+                        font-size: 22px;
+                        line-height: 26px;
+                        border-radius: 0;
+                        text-decoration: none;
+                        font-weight: 600;
+                        color: $primary-color;
+                        @extend %transition;
+                        outline: none;
+                        border: 0 none;
+                        i {
+                            padding-right: 14px;
+                            font-weight: 400;
+                        }
+                        &.collapsed {
+                            color: #52526C;
+                        }
+                        &:focus {
+                            box-shadow: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        .card-body {
+            padding: 0 0 25px;
+        }
+
+        .collapse {
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: "";
+                left: 0;
+                height: 3px;
+                background: $primary-color;
+                width: 100%;
+                z-index: 2;
+                bottom: -1px;
+                @extend %transition;
+                opacity: 1;
+            }
+
+            &.show {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+
+
+/*-----------------------------
+Accourdion Style Two  
+-------------------------------*/
+.axil-accordion--2 {
+    .card {
+        border-radius: 0;
+        border: 1px solid #C7C7D5;
+
+        .card-header {
+            padding: 0;
+            margin-bottom: 0;
+            background-color: transparent;
+            border-bottom: 0;
+
+            &:first-child {
+                border-radius: 0;
+            }
+            .btn {
+                &.btn-link {
+                    padding: 0;
+                    font-size: 22px;
+                    line-height: 26px;
+                    border-radius: 0;
+                    text-decoration: none;
+                    font-weight: 700;
+                    color: $primary-color;
+                    @extend %transition;
+                    outline: none;
+                    border: 0 none;
+                    padding: 20px 35px;
+                    position: relative;
+                    @media #{$sm-layout} {
+                        font-size: 19px;
+                        line-height: 26px;
+                        padding: 15px 14px;
+                        padding-right: 24px;
+                    }
+                    &::after {
+                        top: 50%;
+                        right: 24px;
+                        width: 40px;
+                        height: 40px;
+                        color: #fff;
+                        text-align: center;
+                        line-height: 40px;
+                        transform: translateY(-50%);
+                        content: "";
+                        transition: all 0.4s;
+                        display: inline-block;
+                        position: absolute;
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 0px 7px 7px 7px;
+                        border-color: transparent transparent $primary-color;
+                        @media #{$sm-layout} {
+                            right: 6px;
+                        }
+                    }
+                    &.collapsed {
+                        color: $heading-color;
+
+                        &::after {
+                            border-width: 7px 7px 0px 7px;
+                            border-color: $heading-color transparent transparent;
+                        }
+                    }
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+        .card-body {
+            padding: 0 35px;
+            padding-bottom: 20px;
+            color: #757589;
+            font-size: 18px;
+            line-height: 30px;
+            @media #{$sm-layout} {
+                padding: 0 14px;
+                padding-bottom: 20px;
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
+        .collapse {
+            position: relative;
+        }
+        & + .card {
+            margin-top: 30px;
+        }
+    }
+}

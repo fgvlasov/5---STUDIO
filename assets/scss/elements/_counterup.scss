@@ -1,0 +1,174 @@
+/*----------------------------
+    Axil Counterup Styles 
+-----------------------------*/
+
+.axil-counterup {
+  height: 280px;
+  width: 280px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media #{$lg-layout} {
+    height: 210px;
+    width: 210px;
+  }
+  @media #{$sm-layout} {
+    margin: 0 auto;
+    height: 210px;
+    width: 210px;
+  }
+  @media #{$large-mobile} {
+    margin: 0 auto;
+    height: auto;
+    width: auto;
+    padding: 20px 10px;
+    margin-top: 30px !important;
+  }
+
+  &::after {
+    background: #ffffff;
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    -webkit-transform: perspective(500px) rotateY(-5deg);
+    transform: perspective(500px) rotateY(-5deg);
+    box-shadow: 0 0 1px transparent;
+  }
+
+  &::before {
+    width: 92%;
+    height: 92%;
+    left: -20px;
+    bottom: -20px;
+    background: rgba(0, 2, 72, 0.1);
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transform-style: preserve-3d;
+    transform: rotateY(-10deg);
+    filter: blur(50px);
+    transition: 0.3s;
+    @media #{$sm-layout} {
+      display: none;
+    }
+  }
+
+  .icon {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(112, 47, 255, 0.1);
+    margin: 0 auto;
+    border-radius: 100%;
+
+    img {
+      width: auto !important;
+      height: 20px !important;
+    }
+  }
+
+  h3 {
+    &.count {
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 62px;
+      margin-top: 20px;
+      margin-bottom: 0;
+      position: relative;
+      display: inline-block;
+      @media #{$lg-layout} {
+        font-size: 42px;
+        line-height: 53px;
+        margin-top: 14px;
+      }
+      @media #{$sm-layout} {
+        font-size: 42px;
+        line-height: 53px;
+        margin-top: 14px;
+      }
+      @media #{$large-mobile} {
+        font-size: 28px;
+        line-height: 42px;
+        margin-top: 9px;
+      }
+
+      &::after {
+        content: "+";
+      }
+    }
+  }
+
+  &.counter-first {
+    // .icon {
+    //     background-color: rgba(0,207,255,0.1);
+    // }
+  }
+
+  &.counter-second {
+    margin-top: 120px !important;
+    @media #{$md-layout} {
+      margin-top: 100px !important;
+    }
+    @media #{$sm-layout} {
+      margin-top: 50px !important;
+    }
+    @media #{$large-mobile} {
+      margin-top: 30px !important;
+    }
+
+    .icon {
+      background-color: rgba(255, 138, 91, 0.1);
+    }
+  }
+
+  &.counter-third {
+    .icon {
+      background-color: rgba(0, 207, 255, 0.1);
+    }
+  }
+
+  &.counter-four {
+    margin-top: 120px !important;
+
+    @media #{$md-layout} {
+      margin-top: 60px !important;
+    }
+
+    @media #{$sm-layout} {
+      margin-top: 30px !important;
+    }
+
+    .icon {
+      background-color: rgba(0, 208, 156, 0.1);
+    }
+  }
+
+  &.color-style-two {
+    .icon {
+      background-color: rgba(255, 138, 91, 0.1);
+    }
+  }
+
+  &.color-style-three {
+    .icon {
+      background-color: rgba(0, 207, 255, 0.1);
+    }
+  }
+
+  &.color-style-four {
+    .icon {
+      background-color: rgba(0, 208, 156, 0.1);
+    }
+  }
+}

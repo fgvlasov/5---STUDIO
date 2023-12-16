@@ -1,0 +1,485 @@
+/*=====================
+All Extend Here
+=======================*/
+
+//===== Ncc Colors =====//
+%primary-color {
+  color: $primary-color;
+}
+
+%secondary-color {
+  color: $secondary-color;
+}
+
+%tertiary-color {
+  color: $tertiary-color;
+}
+
+%extra01-color {
+  color: $extra01-color;
+}
+
+%extra02-color {
+  color: $extra02-color;
+}
+%extra03-color {
+  color: $extra03-color;
+}
+
+%extra04-color {
+  color: $extra04-color;
+}
+
+%extra05-color {
+  color: $extra05-color;
+}
+
+%extra06-color {
+  color: $extra06-color;
+}
+
+%extra07-color {
+  color: $extra07-color;
+}
+
+%extra08-color {
+  color: $extra08-color;
+}
+
+%black-color {
+  color: $black-color;
+}
+
+%darker-color {
+  color: $darker-color;
+}
+
+%darkest-color {
+  color: $darkest-color;
+}
+
+%dark-color {
+  color: $dark-color;
+}
+
+%mid-color {
+  color: $mid-color;
+}
+
+%light-color {
+  color: $light-color;
+}
+
+%lighter-color {
+  color: $lighter-color;
+}
+
+%lightest-color {
+  color: $lightest-color;
+}
+
+%white-color {
+  color: $white-color;
+}
+
+%tealLight-color {
+  color: $tealLight-color;
+}
+
+%tealLighter-color {
+  color: $tealLighter-color;
+}
+
+%heading-color {
+  color: $heading-color;
+}
+
+//===== Ncc Colors =====//
+%primary-color {
+  color: $primary-color;
+}
+
+%secondary-color {
+  color: $secondary-color;
+}
+
+%tertiary-color {
+  color: $tertiary-color;
+}
+
+%extra01-color {
+  color: $extra01-color;
+}
+
+%extra02-color {
+  color: $extra02-color;
+}
+
+%black-color {
+  color: $black-color;
+}
+
+%darker-color {
+  color: $darker-color;
+}
+
+%darkest-color {
+  color: $darkest-color;
+}
+
+%dark-color {
+  color: $dark-color;
+}
+
+%mid-color {
+  color: $mid-color;
+}
+
+%light-color {
+  color: $light-color;
+}
+
+%lighter-color {
+  color: $lighter-color;
+}
+
+%lightest-color {
+  color: $lightest-color;
+}
+
+%white-color {
+  color: $white-color;
+}
+
+%tealLight-color {
+  color: $tealLight-color;
+}
+
+%tealLighter-color {
+  color: $tealLighter-color;
+}
+
+%action-color {
+  color: $action-color;
+}
+
+//===== BG Ncc Colors =====//
+%bg-primary-color {
+  background: $primary-color;
+}
+
+%bg-secondary-color {
+  background: $secondary-color;
+}
+
+%bg-tertiary-color {
+  background: $tertiary-color;
+}
+
+%bg-extra01-color {
+  background: $extra01-color;
+}
+
+%bg-extra02-color {
+  background: $extra02-color;
+}
+
+%bg-extra03-color {
+  background: $extra03-color;
+}
+
+%bg-extra04-color {
+  background: $extra04-color;
+}
+
+%bg-extra05-color {
+  background: $extra05-color;
+}
+
+%bg-extra06-color {
+  background: $extra06-color;
+}
+
+%bg-extra07-color {
+  background: $extra07-color;
+}
+
+%bg-extra08-color {
+  background: $extra08-color;
+}
+
+%bg-black-color {
+  background: $black-color;
+}
+
+%bg-darker-color {
+  background: $darker-color;
+}
+
+%bg-darkest-color {
+  background: $darkest-color;
+}
+
+%bg-dark-color {
+  background: $dark-color;
+}
+
+%bg-mid-color {
+  background: $mid-color;
+}
+
+%bg-light-color {
+  background: $light-color;
+}
+
+%bg-lighter-color {
+  background: $lighter-color;
+}
+
+%bg-lightest-color {
+  background: $lightest-color;
+}
+
+%bg-white-color {
+  background: $white-color;
+}
+
+%bg-tealLight-color {
+  background: $tealLight-color;
+}
+
+%bg-tealLighter-color {
+  background: $tealLighter-color;
+}
+
+// Style Css
+%liststyle {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.liststyle {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+%transition {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+%verticalCenter {
+  @extend %posabsolute;
+  top: 50%;
+  @include transform(translateY(-50%));
+  z-index: 2;
+}
+%positionFull {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+%width100 {
+  width: 100%;
+}
+%height100 {
+  height: 100%;
+}
+
+%overflowHidden {
+  overflow: hidden;
+}
+
+%cursorPointer {
+  cursor: pointer;
+}
+
+// Font Weight
+%fontWeight900 {
+  font-weight: 900;
+}
+
+%fontWeight800 {
+  font-weight: 800;
+}
+
+%fontWeight700 {
+  font-weight: 700;
+}
+
+%fontWeight600 {
+  font-weight: 600;
+}
+
+%fontWeight500 {
+  font-weight: 500;
+}
+
+%fontWeight400 {
+  font-weight: 400;
+}
+
+%fontWeight300 {
+  font-weight: 300;
+}
+
+// Text Align
+
+%textLeft {
+  text-align: left;
+}
+
+%textRight {
+  text-align: right;
+}
+
+%textCenter {
+  text-align: center;
+}
+
+// Flexbox Extend
+
+%flexbox {
+  @include flexbox;
+}
+
+%justify-center {
+  @include justify-content(center);
+}
+
+%justify-around {
+  @include justify-content(space-around);
+}
+
+%justify-between {
+  @include justify-content(space-between);
+}
+
+%justify-start {
+  @include justify-content(flex-start);
+}
+
+%justify-end {
+  @include justify-content(flex-end);
+}
+
+%align-start {
+  @include align-items(flex-start);
+}
+
+%align-end {
+  @include align-items(flex-end);
+}
+
+%align-center {
+  @include align-items(center);
+}
+
+%align-stretch {
+  @include align-items(stretch);
+}
+
+%align-baseline {
+  @include align-items(baseline);
+}
+
+%flex-wrap {
+  @include flex-wrap(wrap);
+}
+
+%flex-nowrap {
+  @include flex-wrap(nowrap);
+}
+
+%flex-column {
+  @include flex-direction(column);
+}
+
+%flex-column-reverse {
+  @include flex-direction(column-reverse);
+}
+
+%flex-row {
+  @include flex-direction(row);
+}
+
+%flex-row-reverse {
+  @include flex-direction(row-reverse);
+}
+
+%absFlexCenter {
+  @include flexbox;
+  @include justify-content(center);
+  @include align-items(center);
+}
+
+%horizontalFlexCenter {
+  @include flexbox;
+  @include justify-content(center);
+}
+
+%verticalFlexCenter {
+  @include flexbox;
+  @include align-items(center);
+}
+
+// Bootstrap
+%posabsolute {
+  position: absolute;
+}
+
+%posrelative {
+  position: relative;
+}
+
+%inlineBlock {
+  display: inline-block;
+}
+
+%block {
+  display: block;
+}
+
+%textUpper {
+  text-transform: uppercase;
+}
+
+.textUpper {
+  text-transform: uppercase;
+}
+
+%textCap {
+  text-transform: capitalize;
+}
+
+.textCap {
+  text-transform: capitalize;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+// Font Family
+.font-1 {
+  font-family: $font-1;
+}
+
+%font-1 {
+  font-family: $font-1;
+}
+
+.font-2 {
+  font-family: $font-2;
+}
+
+%font-2 {
+  font-family: $font-2;
+}
+%bgImagePosition {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}

@@ -1,0 +1,72 @@
+/*-----------------------
+ -Video Styles  
+------------------------*/
+.video-button {
+  &.position-to-top {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+  }
+}
+
+.axil-video-wrapper {
+  .thumbnail {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    perspective: 1000px;
+  }
+}
+
+/* Video Button  */
+a {
+  &.video-btn {
+    display: block;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    background: #ffffff;
+    border-radius: 100%;
+    @media #{$md-layout} {
+      width: 80px;
+      height: 80px;
+      line-height: 80px;
+    }
+
+    @media #{$sm-layout} {
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+    }
+
+    span {
+      &.triangle {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 7.5px 0 7.5px 10px;
+        border-color: transparent transparent transparent $primary-color;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+      }
+    }
+  }
+}
+
+.video-player-modal {
+  z-index: 99999;
+
+  iframe {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+  }
+}
+
+.modal-backdrop {
+  z-index: 9999;
+}

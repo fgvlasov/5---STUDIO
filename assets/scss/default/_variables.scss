@@ -1,0 +1,116 @@
+/*-- Variables --*/
+:root {
+  // Base colors
+  --color-primary: #702FFF;
+  --color-primary-alt: #505CFD;
+  --color-secondary: #00D09C;
+  --color-tertiary: #FFCD3E;
+  --color-extra08: #49CCFF;
+  --color-success: #3EB75E;
+  --color-danger: #FF0003;
+  --extra04-color: #00CFFF;
+  --color-body: #757589;
+  --heading-color: #000248;
+}
+
+
+$primary-color: #702FFF;
+$primary-color2: #505CFD;
+$secondary-color: #FF9166;
+$tertiary-color: #49CCFF;
+$extra01-color: #FFCD3E;
+$extra02-color: #5BCC9F;
+$extra03-color: #FFFFFF;
+
+// New
+$extra04-color: #00CFFF;
+$extra05-color: #7A19FF;
+$extra06-color: #FF8A5B;
+$extra07-color: #007AFF;
+$extra08-color: #00D09C;
+$extra09-color: #00004B;
+$extra10-color: #007AFF;
+
+$black-color: #000000;
+$darker-color: #52526C;
+$darkest-color: #000248;
+$dark-color: #757589;
+$mid-color: #999AB6;
+$light-color: #C7C7D5;
+$lighter-color: #F6F5FA;
+$lightest-color: #FAFAFB;
+$white-color: #FFFFFF;
+$tealLight-color: #D1EAED;
+$tealLighter-color: #DCF7FE;
+
+
+// Main Color
+$action-color: #702FFF;
+$heading-color: #000248;
+$body-color: #757589;
+
+
+/*====== Message Color =====*/
+$success-color: #3EB75E;
+$danger-color: #FF0003;
+$warning-color: #FF8F3C;
+$info-color: #1BA2DB;
+
+
+/*=== Color Variation  ===*/
+$color-1: $primary-color;
+$color-2: #f4769a;
+$colorList: $color-1, $color-2;
+
+
+/* Border */
+$border-color: #D3D3D3;
+$radius: 4px;
+
+
+/*====== Ncc Font Family =====*/
+$primary-font: 'DM Sans', sans-serif;
+$secondary-font: 'Lato', sans-serif;
+
+
+/*====== Ncc Font Family Variation List =====*/
+$font-1: 'DM Sans', sans-serif;
+$font-2: 'Lato', sans-serif;
+$fontList: $font-1, $font-2;
+
+
+//===== Line Height =====//
+$body-line-height: 24px;
+
+//==== Font size =====//
+$body-font-size: 18px;
+$h1: 56px;
+$h2: 50px;
+$h3: 35px;
+$h4: 26px;
+$h5: 22px;
+$h6: 16px;
+$display-1: 80px;
+
+
+//===== Social Colors =====//
+$facebook: #3B5998;
+$twitter: #00ACEE;
+$google-plus: #DD4B39;
+$pinterest: #C8232C;
+$linkedin: #0E76A8;
+$flickr: #FF0084;
+$google: #dd4b39;
+$youtube: #cd201f;
+
+
+// Layouts Variation
+$smlg-device: 'only screen and (max-width: 1199px)';
+$extra-device: 'only screen and (min-width: 1600px) and (max-width: 1919px)';
+$laptop-device: 'only screen and (min-width: 1200px) and (max-width: 1599px)';
+$xxlg-device: 'only screen and (min-width: 2000px) and (max-width: 4000px)';
+$lg-layout: 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$md-layout: 'only screen and (min-width: 768px) and (max-width: 991px)';
+$sm-layout: 'only screen and (max-width: 767px)';
+$large-mobile: 'only screen and (max-width: 575px)';
+$small-mobile: 'only screen and (max-width: 479px)';

@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Small Business",
+    "subtitle": "A beautiful, simple website",
+    "currency": "$",
+    "price": {
+      "monthly": 46,
+      "yearly": 552
+    },
+    "subtitleTwo": "100% money back guarantee",
+    "features": [
+      "10 Pages Responsive Website",
+      "5 PPC Campaigns",
+      "10 SEO Keywords",
+      "5 Facebook Camplaigns",
+      "2 Video Camplaigns"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Medium business",
+    "subtitle": "A beautiful, simple website",
+    "currency": "$",
+    "price": {
+      "monthly": 99,
+      "yearly": 499
+    },
+    "subtitleTwo": "100% money back guarantee",
+    "features": [
+      "20 Pages Responsive Website",
+      "Unlimited PPC Campaigns",
+      "Unlimited SEO Keywords",
+      "Unlimited Facebook",
+      "Unlimited Video Camplaigns"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Corporate Business",
+    "subtitle": "A beautiful, simple website",
+    "currency": "$",
+    "price": {
+      "monthly": 199,
+      "yearly": 999
+    },
+    "subtitleTwo": "100% money back guarantee",
+    "features": [
+      "50 Pages Responsive Website",
+      "Unlimited PPC Campaigns",
+      "Unlimited SEO Keywords",
+      "Unlimited Facebook",
+      "Unlimited Video Camplaigns"
+    ]
+  }
+]

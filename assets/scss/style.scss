@@ -1,0 +1,158 @@
+/*****************************************************************************
+
+	Template Name: Keystroke Creative Agency Bootstrap5 Html5 Template
+	Note: This is style css.
+
+******************************************************************************/
+
+/**************************************************************
+	
+	STYLESHEET INDEXING
+	|
+	|
+	|___ Default Styles
+	|	|
+	|	|___ variables Styles
+	|	|___ mixins
+	|	|___ reset
+	|	|___ typography
+	|	|___ extend
+	|	|___ animations
+	|	|___ animation-text
+	|	|___ shortcode
+	|	|___ spacing
+	|	|___ common
+	|	|___ forms
+	|	|___ typography
+	|
+	|
+	|___Header Styles
+	|	|___ header
+	|	|___ nav
+	|	|___ sidebar
+	|	|___ search
+	|	|___ scrollnavigation
+	|	|___ menubar
+	|
+	|
+	|___Elements Styles
+	|	|___ button 
+	|	|___ section-title 
+	|	|___ dividers 
+	|	|___ social-icon 
+	|	|___ contact 
+	|	|___ portfolio 
+	|	|___ counterup 
+	|	|___ testimonial 
+	|	|___ brand 
+	|	|___ blog 
+	|	|___ blog-list 
+	|	|___ call-to-action 
+	|	|___ case-study 
+	|	|___ axil-slick 
+	|	|___ pricingtable 
+	|	|___ video 
+	|	|___ cuntdown 
+	|	|___ accordion 
+	|
+	|
+	|
+	|___Template Styles
+	|	|___ banner 
+	|	|___ breadcrumb
+	|	|___ featured
+	|	|___ aboutUs
+	|	|___ contact
+	|	|___ single-service
+	|	|___ team-details
+	|	|___ commingsoon
+	|	|___ single-case-study
+	|	|___ blog-sidebar
+	|	|___ blog-details
+	|	|___ error
+	|	|___ preview
+	|
+	|___Footer Styles
+	|	|___ footer 
+	|
+	|
+	|___ END STYLESHEET INDEXING
+
+***************************************************************/
+
+/**************************************
+    Default Styles
+***************************************/
+@import "default/variables";
+@import "default/mixins";
+@import "default/reset";
+@import "default/typography";
+@import "default/extend";
+@import "default/animations";
+@import "default/animation-text";
+@import "default/shortcode";
+@import "default/spacing";
+@import "default/common";
+@import "default/forms";
+
+/**************************************
+	Header Styles
+***************************************/
+@import "header/header";
+@import "header/nav";
+@import "header/sidebar";
+@import "header/search";
+@import "header/scrollnavigation";
+@import "header/menubar";
+
+/**************************************
+	Elements Styles
+***************************************/
+
+@import "elements/button";
+@import "elements/section-title";
+@import "elements/dividers";
+@import "elements/social-icon";
+@import "elements/service";
+@import "elements/contact";
+@import "elements/portfolio";
+@import "elements/counterup";
+@import "elements/testimonial";
+@import "elements/brand";
+@import "elements/blog";
+@import "elements/blog-list";
+@import "elements/call-to-action";
+@import "elements/case-study";
+@import "elements/axil-slick";
+@import "elements/team";
+@import "elements/pricingtable";
+@import "elements/video";
+@import "elements/cuntdown";
+@import "elements/accordion";
+@import "elements/switcher";
+@import "elements/pagination";
+
+/**************************************
+	Template Styles
+***************************************/
+@import "template/banner";
+@import "template/breadcrumb";
+@import "template/featured";
+@import "template/aboutUs";
+@import "template/contact";
+@import "template/single-service";
+@import "template/team-details";
+@import "template/commingsoon";
+@import "template/single-case-study";
+@import "template/blog-sidebar";
+@import "template/blog-details";
+@import "template/error";
+@import "template/privacy-policy";
+@import "template/preview";
+
+/**************************************
+	Footer Styles
+***************************************/
+@import "footer/footer";
+@import "footer/light";
+@import "footer/dark";

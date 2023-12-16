@@ -1,0 +1,263 @@
+/*======= Common Style Css ======*/
+
+//===== Ncc Colors =====//
+.primary-color {
+    color: $primary-color !important;
+}
+
+.secondary-color {
+    color: $secondary-color !important;
+}
+
+.tertiary-color {
+    color: $tertiary-color !important;
+}
+
+.extra01-color {
+    color: $extra01-color !important;
+}
+
+.extra02-color {
+    color: $extra02-color !important;
+}
+
+.extra03-color {
+    color: $extra03-color !important;
+}
+
+.extra04-color {
+    color: $extra04-color !important;
+}
+
+.extra05-color {
+    color: $extra05-color !important;
+}
+
+.extra06-color {
+    color: $extra06-color !important;
+}
+
+.extra07-color {
+    color: $extra07-color !important;
+}
+
+.extra08-color {
+    color: $extra08-color !important;
+}
+
+.extra09-color {
+    color: $extra09-color !important;
+}
+
+.extra10-color {
+    color: $extra10-color !important;
+}
+
+.black-color {
+    color: $black-color !important;
+}
+
+.darker-color {
+    color: $darker-color !important;
+}
+
+.darkest-color {
+    color: $darkest-color !important;
+}
+
+.dark-color {
+    color: $dark-color !important;
+}
+
+.mid-color {
+    color: $mid-color !important;
+}
+
+.light-color {
+    color: $light-color !important;
+}
+
+.lighter-color {
+    color: $lighter-color !important;
+}
+
+.lightest-color {
+    color: $lightest-color !important;
+}
+
+.white-color {
+    color: $white-color !important;
+}
+
+.tealLight-color {
+    color: $tealLight-color !important;
+}
+
+.tealLighter-color {
+    color: $tealLighter-color !important;
+}
+
+// List Style
+.liststyle {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+// Font Weight Style
+.fontWeight900 {
+    font-weight: 900 !important;
+}
+
+.fontWeight800 {
+    font-weight: 800 !important;
+}
+
+.fontWeight700 {
+    font-weight: 700 !important;
+}
+
+.fontWeight600 {
+    font-weight: 600 !important;
+}
+
+.fontWeight500 {
+    font-weight: 500 !important;
+}
+
+.fontWeight400 {
+    font-weight: 400 !important;
+}
+
+.fontWeight300 {
+    font-weight: 300 !important;
+}
+
+
+/* Theme Gradient */
+
+.theme-gradient {
+    background: linear-gradient(180deg, #EAF8FF 0%, #F6F6FF 100%);
+}
+.theme-gradient-3 {
+    background: linear-gradient(270deg, #FFFFFF 0%, #F4FF99 24.38%, #E3D4F9 77.05%, #FFFFFF 100%);
+}
+.theme-gradient-4 {
+    background: linear-gradient(180deg, #FEF7E2 0%, #EEEEFD 100%);
+}
+
+.theme-gradient-5 {
+    background: linear-gradient(134.74deg, #D6FFFC 0%, #FAE7E4 100%);
+}
+
+.theme-gradient-6 {
+    background: linear-gradient(180deg, #A7FFF5 0%, rgba(255,255,255,0) 100%);
+}
+
+.theme-gradient-7 {
+    background: linear-gradient(180deg, #EBFFFD 0%, #EFEEFA 100%);
+}
+
+
+.theme-gradient-8 {
+    background: linear-gradient(180deg, #A7FFF5 0%, #EEEEFD 100%);
+}
+
+
+.theme-gradient-9 {
+    background: linear-gradient(153.23deg, #D6FFFC 0%, #FAE7E4 100%);
+}
+
+
+
+
+
+//===== Ncc Colors =====//
+
+.bg-primary-color {
+    background: $primary-color !important;
+}
+
+.bg-secondary-color {
+    background: $secondary-color !important;
+}
+
+.bg-tertiary-color {
+    background: $tertiary-color !important;
+}
+
+.bg-extra01-color {
+    background: $extra01-color !important;
+}
+
+.bg-extra02-color {
+    background: $extra02-color !important;
+}
+
+.bg-extra03-color {
+    background: $extra03-color !important;
+}
+
+.bg-extra04-color {
+    background: $extra04-color !important;
+}
+
+.bg-extra05-color {
+    background: $extra05-color !important;
+}
+
+.bg-extra06-color {
+    background: $extra06-color !important;
+}
+
+.bg-extra07-color {
+    background: $extra07-color !important;
+}
+
+.bg-extra08-color {
+    background: $extra08-color !important;
+}
+
+.bg-black-color {
+    background: $black-color !important;
+}
+
+.bg-darker-color {
+    background: $darker-color !important;
+}
+
+.bg-darkest-color {
+    background: $darkest-color !important;
+}
+
+.bg-dark-color {
+    background: $dark-color !important;
+}
+
+.bg-mid-color {
+    background: $mid-color !important;
+}
+
+.bg-light-color {
+    background: $light-color !important;
+}
+
+.bg-lighter-color {
+    background: $lighter-color !important;
+}
+
+.bg-lightest-color {
+    background: $lightest-color !important;
+}
+
+.bg-white-color {
+    background: $white-color !important;
+}
+
+.bg-tealLight-color {
+    background: $tealLight-color !important;
+}
+
+.bg-tealLighter-color {
+    background: $tealLighter-color !important;
+}

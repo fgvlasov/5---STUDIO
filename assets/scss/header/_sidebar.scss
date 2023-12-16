@@ -1,0 +1,290 @@
+/*----------------------
+    Sidebar Nav 
+-----------------------*/
+.side-nav-opened {
+  position: relative;
+  overflow: hidden;
+  padding-right: 17px;
+  body {
+    position: relative;
+    z-index: 1;
+    &::before {
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 99;
+      transition: all 0.5s;
+    }
+  }
+}
+.close-sidenav {
+  position: absolute;
+  top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 46px;
+  height: 46px;
+  border-radius: 100%;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+.close-sidenav {
+  button {
+    &.close-button {
+      padding: 0;
+      border: 0 none;
+      i {
+        font-size: 30px;
+        color: $heading-color;
+        @extend %transition;
+      }
+      &:hover {
+        i {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+/*--------------------------
+    Side Nav Styles 
+ ---------------------------*/
+
+.side-nav {
+  width: 60vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -61vw;
+  z-index: 9999;
+  padding: 55px;
+  background: #ffffff;
+  transition: all 0.8s cubic-bezier(0.77, 0.2, 0.05, 1);
+  overflow-y: auto;
+  @media #{$sm-layout} {
+    padding: 55px 30px 30px;
+  }
+  @media #{$large-mobile} {
+    width: 90vw;
+    right: -90vw;
+  }
+  &.opened {
+    right: 0;
+  }
+  .side-nav-inner {
+    padding: 100px 50px;
+    @media #{$lg-layout} {
+      padding: 40px 0px;
+    }
+    @media #{$md-layout} {
+      padding: 28px 0;
+    }
+    @media #{$sm-layout} {
+      padding: 28px 0;
+    }
+    // Form Group
+    .form-group {
+      position: relative;
+      margin-bottom: 80px;
+      @media #{$md-layout} {
+        margin-bottom: 40px;
+      }
+      @media #{$sm-layout} {
+        margin-bottom: 40px;
+      }
+      input {
+        border-bottom: 2px solid $border-color;
+        height: auto;
+        font-size: 40px;
+        color: $dark-color;
+        padding-bottom: 10px;
+        padding-right: 53px;
+        @media #{$lg-layout} {
+          font-size: 35px;
+        }
+        @media #{$md-layout} {
+          font-size: 30px;
+        }
+        @media #{$sm-layout} {
+          font-size: 30px;
+        }
+      }
+      button {
+        &.side-nav-search-btn {
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          border: 0 none;
+          i {
+            color: $dark-color;
+            font-size: 20px;
+            font-weight: 400;
+            @extend %transition;
+          }
+          &:hover {
+            i {
+              color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+
+    // Side Nav Content
+    .side-nav-content {
+      ul {
+        &.main-navigation {
+          @extend %liststyle;
+          margin: -45px 0;
+          @media #{$md-layout} {
+            margin: -30px 0;
+            margin-bottom: 30px;
+          }
+          @media #{$sm-layout} {
+            margin: -17px 0;
+            margin-bottom: 30px;
+          }
+          @media #{$lg-layout} {
+            margin-top: -18px;
+          }
+          li {
+            margin: 45px 0;
+            @media #{$lg-layout} {
+              margin: 22px 0;
+            }
+            @media #{$md-layout} {
+              margin: 30px 0;
+            }
+            @media #{$sm-layout} {
+              margin: 17px 0;
+            }
+            a {
+              color: $heading-color;
+              font-size: 36px;
+              font-weight: 500;
+              text-decoration: none;
+              @extend %transition;
+
+              @media #{$lg-layout} {
+                font-size: 28px;
+              }
+              @media #{$md-layout} {
+                font-size: 28px;
+              }
+              @media #{$sm-layout} {
+                font-size: 25px;
+              }
+              &:hover {
+                color: $primary-color;
+              }
+            }
+          }
+        }
+      }
+
+      // Contact Info Inner
+      .axil-contact-info-inner {
+        h5,
+        span {
+          &.title {
+            font-size: 18px;
+            line-height: 1;
+            color: $heading-color;
+            font-weight: 500;
+            display: block;
+            margin-bottom: 15px;
+          }
+        }
+        .axil-contact-info {
+          p {
+            font-size: 16px;
+            line-height: 28px;
+          }
+          .address {
+            p {
+              margin-bottom: 4px;
+              a {
+                color: $body-color;
+                text-decoration: none;
+                @extend %transition;
+                &:hover {
+                  color: $primary-color;
+                }
+              }
+              i {
+                padding-right: 14px;
+                font-size: 14px;
+                color: $heading-color;
+              }
+            }
+            & + .address {
+              margin-top: 30px;
+            }
+          }
+          & + .axil-contact-info {
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*-----------------------
+    Menu Toggler 
+-------------------------*/
+.axil-menuToggle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  border: none;
+  transition: 0.3s;
+  span {
+    display: flex;
+    width: 20px;
+    height: 2px;
+    margin-bottom: 5px;
+    position: relative;
+    background: $heading-color;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 5px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+    &:first-child {
+    }
+    &:last-child {
+      width: 15px;
+      right: -1px;
+      position: relative;
+      margin-bottom: 0;
+    }
+  }
+}
+
+/*---------------------
+    Bg Theme Color  
+-----------------------*/
+.bg-theme-color {
+  .axil-menuToggle {
+    background: $heading-color;
+    span {
+      background: #fff;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+/*-----------------------
+    Scroll Navigation  
+-------------------------*/
+
+.axil-scroll-navigation{
+    .nav {
+        position: static;
+        width: 100%;
+        top: 0;
+        z-index: 9;
+        padding-left: 0;
+        position: relative;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+        border: 0 none;
+
+        &::after {
+            height: 1px;
+            background: #F6F5FA;
+            width: 1290px;
+            position: absolute;
+            bottom: 0;
+            content: "";
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .nav-item {
+            a {
+                padding: 30px 10px;
+                border-radius: 7px;
+                transition: all 0.2s ease-out;
+                text-decoration: none;
+                position: relative;
+                margin: 0 10px;
+                background: transparent;
+                color: $body-color;
+                @media #{$md-layout} {
+                    font-size: 16px;
+                    padding: 20px 4px;
+                }
+                @media #{$sm-layout} {
+                    padding: 10px 6px;
+                    margin: 0 5px;
+                    font-size: 14px;
+                }
+                &::after {
+                    position: absolute;
+                    content: "";
+                    bottom: 0;
+                    background: $primary-color;
+                    height: 3px;
+                    width: 0;
+                    left: 0;
+                    @extend %transition;
+                }
+                &.active ,
+                &:hover  {
+                    color: $primary-color;
+                    &::after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        &.is-affixed {
+            border-bottom: 0;
+            top: 0 !important;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            
+            .sidebar__inner {
+                a {
+                    padding: 30px 10px;
+                }
+            }
+        }
+    }
+}

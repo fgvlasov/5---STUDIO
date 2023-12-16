@@ -1,0 +1,70 @@
+[
+  {
+    "id": 1,
+    "name": "Blanche Owens",
+    "avatar": "/images/blog/author-01.jpg",
+    "designation": "",
+    "message": "Email is a crucial channel in any marketing mix, and never has this been truer than for today’s entrepreneur. Curious what to say.",
+    "socialLinks": [
+      { "type": "facebook-f", "url": "https://www.facebook.com/" },
+      { "type": "twitter", "url": "https://twitter.com/" },
+      { "type": "linkedin", "url": "https://www.linkedin.com/" },
+      { "type": "pinterest", "url": "https://www.pinterest.com/" },
+      { "type": "instagram", "url": "https://www.instagram.com/" },
+      { "type": "vimeo-v", "url": "https://vimeo.com/" },
+      { "type": "dribbble", "url": "https://dribbble.com/" },
+      { "type": "behance", "url": "https://www.behance.net/" }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Theresa Underwood",
+    "avatar": "/images/blog/author-01.jpg",
+    "designation": "",
+    "message": "Email is a crucial channel in any marketing mix, and never has this been truer than for today’s entrepreneur. Curious what to say.",
+    "socialLinks": [
+      { "type": "facebook-f", "url": "https://www.facebook.com/" },
+      { "type": "twitter", "url": "https://twitter.com/" },
+      { "type": "linkedin", "url": "https://www.linkedin.com/" },
+      { "type": "pinterest", "url": "https://www.pinterest.com/" },
+      { "type": "instagram", "url": "https://www.instagram.com/" },
+      { "type": "vimeo-v", "url": "https://vimeo.com/" },
+      { "type": "dribbble", "url": "https://dribbble.com/" },
+      { "type": "behance", "url": "https://www.behance.net/" }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Joshua Sheehan",
+    "avatar": "/images/blog/author-01.jpg",
+    "designation": "",
+    "message": "Email is a crucial channel in any marketing mix, and never has this been truer than for today’s entrepreneur. Curious what to say.",
+    "socialLinks": [
+      { "type": "facebook-f", "url": "https://www.facebook.com/" },
+      { "type": "twitter", "url": "https://twitter.com/" },
+      { "type": "linkedin", "url": "https://www.linkedin.com/" },
+      { "type": "pinterest", "url": "https://www.pinterest.com/" },
+      { "type": "instagram", "url": "https://www.instagram.com/" },
+      { "type": "vimeo-v", "url": "https://vimeo.com/" },
+      { "type": "dribbble", "url": "https://dribbble.com/" },
+      { "type": "behance", "url": "https://www.behance.net/" }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Oscar Becker",
+    "avatar": "/images/blog/author-01.jpg",
+    "designation": "CEO @ Google",
+    "message": "Email is a crucial channel in any marketing mix, and never has this been truer than for today’s entrepreneur. Curious what to say.",
+    "socialLinks": [
+      { "type": "facebook-f", "url": "https://www.facebook.com/" },
+      { "type": "twitter", "url": "https://twitter.com/" },
+      { "type": "linkedin", "url": "https://www.linkedin.com/" },
+      { "type": "pinterest", "url": "https://www.pinterest.com/" },
+      { "type": "instagram", "url": "https://www.instagram.com/" },
+      { "type": "vimeo-v", "url": "https://vimeo.com/" },
+      { "type": "dribbble", "url": "https://dribbble.com/" },
+      { "type": "behance", "url": "https://www.behance.net/" }
+    ]
+  }
+]

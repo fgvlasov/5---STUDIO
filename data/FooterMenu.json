@@ -1,0 +1,30 @@
+{
+  "social": [
+    {"type":  "facebook", "icon": "fa-facebook-f", "url":  "https://www.facebook.com/"},
+    {"type":  "twitter", "icon": "fa-twitter", "url":  "https://twitter.com/"},
+    {"type":  "pinterest", "icon": "fa-pinterest-p", "url":  "https://www.pinterest.com/"},
+    {"type":  "linkedin", "icon": "fa-linkedin-in", "url":  "https://www.linkedin.com/"},
+    {"type":  "instagram", "icon": "fa-instagram", "url":  "https://www.instagram.com/"},
+    {"type":  "vimeo", "icon": "fa-vimeo-v", "url":  "https://vimeo.com/"},
+    {"type":  "dribble", "icon": "fa-dribbble", "url":  "https://dribbble.com/"},
+    {"type":  "behance", "icon": "fa-behance", "url":  "https://www.behance.net/"}
+  ],
+  "services": [
+    {"title":  "Logo & Branding", "url":  "/services/design/logo-and-branding"},
+    {"title":  "Website Development", "url":  "/services/design/website-design"},
+    {"title":  "Mobile App Development", "url":  "/services/design/mobile-app-design"},
+    {"title":  "Search Engine Optimization", "url":  "/services/online-marketing/search-engine-optimization"},
+    {"title":  "Pay-Per-Click", "url":  "/services/online-marketing/pay-per-click"},
+    {"title":  "Social Media Marketing", "url":  "/services/online-marketing/social-media-marketing"}
+  ],
+  "resources": [
+    {"title":  "Blog", "url":  "/blog"},
+    {"title":  "Case Studies", "url":  "/case-study"},
+    {"title":  "Portfolio", "url":  "/portfolio"}
+  ],
+  "support": [
+    {"title":  "Contact", "url":  "/contact"},
+    {"title":  "Privacy Policy", "url":  "/privacy-policy"},
+    {"title":  "Sitemap", "url":  "#"}
+  ]
+}

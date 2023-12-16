@@ -1,0 +1,218 @@
+/*------------------------
+    Axil Team Styles 
+-------------------------*/
+
+.axil-team-area {
+  &.shape-position {
+    position: relative;
+    z-index: 2;
+    .shape-group {
+      @media #{$large-mobile} {
+        display: none;
+      }
+      .shape {
+        position: absolute;
+        left: 0;
+        top: 50%;
+
+        &.shape-1 {
+          left: 19%;
+          top: 36%;
+          z-index: 2;
+        }
+        &.shape-2 {
+          left: 7%;
+          top: 30%;
+        }
+        &.shape-3 {
+          top: 23%;
+          transform: rotate(20deg);
+          left: 18%;
+
+          @media #{$md-layout} {
+            top: 17%;
+            transform: rotate(-7deg);
+          }
+          @media #{$lg-layout} {
+            left: -9%;
+          }
+          @media #{$sm-layout} {
+            top: 13%;
+            transform: rotate(-7deg);
+          }
+        }
+      }
+    }
+  }
+  .thumbnail {
+    position: relative;
+    z-index: 3;
+    img {
+      @media #{$lg-layout} {
+        width: 100%;
+      }
+      @media #{$md-layout} {
+        width: 100%;
+      }
+      @media #{$sm-layout} {
+        width: 100%;
+      }
+    }
+    .image {
+      img {
+        @media #{$sm-layout} {
+          width: 100%;
+        }
+      }
+    }
+    .total-team-button {
+      a {
+        display: inline-block;
+        width: 80px;
+        height: 60px;
+        font-size: 26px;
+        line-height: 32px;
+        font-weight: 700;
+        color: $white-color;
+        text-decoration: none;
+        position: absolute;
+        z-index: 2;
+        right: 34%;
+        bottom: 40px;
+        text-align: center;
+        line-height: 57px;
+        span {
+          display: inline-block;
+          padding-left: 10px;
+        }
+        &::after {
+          box-shadow: 0 5px 35px rgba(0, 2, 72, 0.1);
+          background: #7a19ff;
+          position: absolute;
+          content: "";
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+          transform: perspective(100px) rotateY(-20deg);
+        }
+      }
+    }
+  }
+}
+
+/* Axil Team Area  */
+.axil-team {
+  .inner {
+    .thumbnail {
+      position: relative;
+      display: inline-block;
+      &::before {
+        position: absolute;
+        width: calc(100% + -2px);
+        height: calc(100% + -7px);
+        top: calc(25px + -2px);
+        content: "";
+        border: 2px solid #000345;
+        z-index: -1;
+        right: calc(25px + -4px);
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s;
+      }
+    }
+    .content {
+      padding-top: 20px;
+      @media #{$sm-layout} {
+        padding-top: 13px;
+      }
+      h4 {
+        &.title {
+          margin-bottom: 10px;
+          @media #{$sm-layout} {
+            margin-bottom: 3px;
+          }
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+      p {
+        &.subtitle {
+        }
+      }
+    }
+    &:hover {
+      .thumbnail {
+        &::before {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+}
+
+/* Team Tab Styles  */
+.nav-tabs {
+  &.team-nab-tabs {
+    border: 0 none;
+    li {
+      a {
+        margin: 0;
+        display: inline-block;
+        padding: 0;
+        border: 0 none;
+        text-decoration: none;
+        background: transparent;
+        color: #131a55;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 34px 15px;
+        -webkit-perspective: 1000px;
+        perspective: 1000px;
+        transition: 0.3s;
+        @media #{$md-layout} {
+          padding: 20px 12px;
+        }
+        @media #{$sm-layout} {
+          padding: 16px 11px;
+        }
+        &.nav-link {
+          &.active {
+            background: transparent;
+            border: 0 none;
+            position: relative;
+            z-index: 2;
+            color: $primary-color;
+            &::before {
+              -webkit-box-shadow: 0 5px 35px rgba(0, 2, 72, 0.1);
+              box-shadow: 0 5px 35px rgba(0, 2, 72, 0.1);
+              background: #ffffff;
+              position: absolute;
+              content: "";
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              width: 100%;
+              height: 100%;
+              z-index: -1;
+              transform: perspective(225px) rotateY(-11deg);
+              @media #{$md-layout} {
+                transform: perspective(210px) rotateY(-3deg);
+              }
+              @media #{$sm-layout} {
+                transform: perspective(210px) rotateY(-3deg);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

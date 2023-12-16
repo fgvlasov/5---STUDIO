@@ -1,0 +1,98 @@
+/*----------------------------
+    Axil Countdown Styles 
+-----------------------------*/
+
+.countdown-style-1 {
+    .countbox {
+        &.timer-grid {
+            > div {
+                display: flex;
+                text-align: left;
+                margin: 0 -50px;
+                position: relative;
+                z-index: 2;
+                flex-wrap: wrap;
+                margin-bottom: -20px;
+                > span {
+                    &.axil-count{
+                        padding: 0 50px;
+                        display: inline-block;
+                        text-align: left;
+                        position: relative;
+                        margin-bottom: 20px;
+                        &::after {
+                            position: absolute;
+                            content: "";
+                            background: #C7C7D5;
+                            height: 80px;
+                            width: 1px;
+                            top: 50%;
+                            right: 0;
+                            transform: translateY(-50%);
+                            @media #{$md-layout} {
+                                display: none;
+                            }
+                            @media #{$sm-layout} {
+                                display: none;
+                            }
+                        }
+                        &:last-child {
+                            &::after {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .time-count {
+                        color: #7A19FF;
+                        font-size: 80px;
+                        font-weight: 700;
+                        line-height: 73px;
+                        display: block;
+                        text-align: left;
+                        @media #{$md-layout} {
+                            font-size: 50px;
+                            line-height: 60px;
+                        }
+                        @media #{$sm-layout} {
+                            font-size: 40px;
+                            line-height: 42px;
+                        }
+                    }
+
+                    &.count-inner{
+                        p {
+                            color: #757589;
+                            font-size: 18px;
+                            line-height: 28px;
+                            text-align: center;
+                        }
+                    }
+
+
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

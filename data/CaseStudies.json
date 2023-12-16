@@ -1,0 +1,310 @@
+[
+  {
+    "id": 1,
+    "title": "Los Marineros",
+    "subtitle": "featured case study",
+    "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
+    "image": "/images/featured/featured-image-01.jpg",
+    "counter": [
+      {
+        "title": "ROI increase",
+        "amount": 15
+      },
+      {
+        "title": "Monthly website visits",
+        "amount": 60
+      }
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=Pj_geat9hvI",
+    "projectBreif1": {
+      "image": "/images/featured/featured-brief-01.jpg",
+      "description": [
+        "Nulla et velit gravida, facilisis quam a, molestie ante. Mauris placerat suscipit dui, eget maximus tellus blandit a. Praesent non tellus sed ligula commodo blandit in et mauris. Quisque efficitur ipsum ut dolor molestie pellentesque.",
+        "Nulla pharetra hendrerit mi quis dapibus. Quisque luctus, tortor a venenatis fermentum, est lacus feugiat nisl, id pharetra odio enim eget libero."
+      ]
+    },
+    "projectBreif2": {
+      "image": "",
+      "description": [
+        "Nulla et velit gravida, facilisis quam a, molestie ante. Mauris placerat suscipit dui, eget maximus tellus blandit a. Praesent non tellus sed ligula commodo blandit in et mauris. Quisque efficitur ipsum ut dolor molestie pellentesque.",
+        "Nulla pharetra hendrerit mi quis dapibus. Quisque luctus, tortor a venenatis fermentum, est lacus feugiat nisl, id pharetra odio enim eget libero."
+      ]
+    },
+    "solution": {
+      "image": "",
+      "description": [
+        "Nulla et velit gravida, facilisis quam a, molestie ante. Mauris placerat suscipit dui, eget maximus tellus blandit a. Praesent non tellus sed ligula commodo blandit in et mauris. Quisque efficitur ipsum ut dolor molestie pellentesque.",
+        "Nulla pharetra hendrerit mi quis dapibus. Quisque luctus, tortor a venenatis fermentum, est lacus feugiat nisl, id pharetra odio enim eget libero."
+      ]
+    },
+    "process": {
+      "title": "Our design process",
+      "description": "Our comprehensive design strategy ensures a perfectly crafted design for your business.",
+      "strategies": [
+        {
+          "id": 1,
+          "title": "Discover",
+          "subtitle": "our four step process",
+          "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
+          "highlightColor": "extra04-color",
+          "image": "/images/process/process-01.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Prototype",
+          "subtitle": "our four step process",
+          "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
+          "highlightColor": "extra05-color",
+          "image": "/images/process/process-02.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Test",
+          "subtitle": "our four step process",
+          "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
+          "highlightColor": "extra06-color",
+          "image": "/images/process/process-03.jpg"
+        },
+        {
+          "id": 4,
+          "title": "Build",
+          "subtitle": "our four step process",
+          "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
+          "highlightColor": "extra07-color",
+          "image": "/images/process/process-04.jpg"
+        }
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "title": "Whitehorse",
+    "subtitle": "featured case study",
+    "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
+    "image": "/images/featured/featured-image-03.jpg",
+    "counter": [
+      {
+        "title": "ROI increase",
+        "amount": 15
+      },
+      {
+        "title": "Monthly website visits",
+        "amount": 60
+      }
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=Pj_geat9hvI",
+    "projectBreif1": {
+      "image": "/images/featured/featured-brief-02.jpg",
+      "description": [
+        "Nulla et velit gravida, facilisis quam a, molestie ante. Mauris placerat suscipit dui, eget maximus tellus blandit a. Praesent non tellus sed ligula commodo blandit in et mauris. Quisque efficitur ipsum ut dolor molestie pellentesque.",
+        "Nulla pharetra hendrerit mi quis dapibus. Quisque luctus, tortor a venenatis fermentum, est lacus feugiat nisl, id pharetra odio enim eget libero."
+      ]
+    },
+    "projectBreif2": {
+      "image": "",
+      "description": [
+        "Nulla et velit gravida, facilisis quam a, molestie ante. Mauris placerat suscipit dui, eget maximus tellus blandit a. Praesent non tellus sed ligula commodo blandit in et mauris. Quisque efficitur ipsum ut dolor molestie pellentesque.",
+        "Nulla pharetra hendrerit mi quis dapibus. Quisque luctus, tortor a venenatis fermentum, est lacus feugiat nisl, id pharetra odio enim eget libero."
+      ]
+    },
+    "solution": {
+      "image": "",
+      "description": [
+        "Nulla et velit gravida, facilisis quam a, molestie ante. Mauris placerat suscipit dui, eget maximus tellus blandit a. Praesent non tellus sed ligula commodo blandit in et mauris. Quisque efficitur ipsum ut dolor molestie pellentesque.",
+        "Nulla pharetra hendrerit mi quis dapibus. Quisque luctus, tortor a venenatis fermentum, est lacus feugiat nisl, id pharetra odio enim eget libero."
+      ]
+    },
+    "process": {
+      "title": "Our design process",
+      "description": "Our comprehensive design strategy ensures a perfectly crafted design for your business.",
+      "strategies": [
+        {
+          "id": 1,
+          "title": "Discover",
+          "subtitle": "our four step process",
+          "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
+          "highlightColor": "extra04-color",
+          "image": "/images/process/process-01.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Prototype",
+          "subtitle": "our four step process",
+          "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
+          "highlightColor": "extra05-color",
+          "image": "/images/process/process-02.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Test",
+          "subtitle": "our four step process",
+          "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
+          "highlightColor": "extra06-color",
+          "image": "/images/process/process-03.jpg"
+        },
+        {
+          "id": 4,
+          "title": "Build",
+          "subtitle": "our four step process",
+          "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
+          "highlightColor": "extra07-color",
+          "image": "/images/process/process-04.jpg"
+        }
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "title": "Periscope Data",
+    "subtitle": "featured case study",
+    "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
+    "image": "/images/featured/featured-image-04.jpg",
+    "counter": [
+      {
+        "title": "ROI increase",
+        "amount": 15
+      },
+      {
+        "title": "Monthly website visits",
+        "amount": 60
+      }
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=Pj_geat9hvI",
+    "projectBreif1": {
+      "image": "/images/featured/featured-brief-03.jpg",
+      "description": [
+        "Nulla et velit gravida, facilisis quam a, molestie ante. Mauris placerat suscipit dui, eget maximus tellus blandit a. Praesent non tellus sed ligula commodo blandit in et mauris. Quisque efficitur ipsum ut dolor molestie pellentesque.",
+        "Nulla pharetra hendrerit mi quis dapibus. Quisque luctus, tortor a venenatis fermentum, est lacus feugiat nisl, id pharetra odio enim eget libero."
+      ]
+    },
+    "projectBreif2": {
+      "image": "",
+      "description": [
+        "Nulla et velit gravida, facilisis quam a, molestie ante. Mauris placerat suscipit dui, eget maximus tellus blandit a. Praesent non tellus sed ligula commodo blandit in et mauris. Quisque efficitur ipsum ut dolor molestie pellentesque.",
+        "Nulla pharetra hendrerit mi quis dapibus. Quisque luctus, tortor a venenatis fermentum, est lacus feugiat nisl, id pharetra odio enim eget libero."
+      ]
+    },
+    "solution": {
+      "image": "",
+      "description": [
+        "Nulla et velit gravida, facilisis quam a, molestie ante. Mauris placerat suscipit dui, eget maximus tellus blandit a. Praesent non tellus sed ligula commodo blandit in et mauris. Quisque efficitur ipsum ut dolor molestie pellentesque.",
+        "Nulla pharetra hendrerit mi quis dapibus. Quisque luctus, tortor a venenatis fermentum, est lacus feugiat nisl, id pharetra odio enim eget libero."
+      ]
+    },
+    "process": {
+      "title": "Our design process",
+      "description": "Our comprehensive design strategy ensures a perfectly crafted design for your business.",
+      "strategies": [
+        {
+          "id": 1,
+          "title": "Discover",
+          "subtitle": "our four step process",
+          "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
+          "highlightColor": "extra04-color",
+          "image": "/images/process/process-01.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Prototype",
+          "subtitle": "our four step process",
+          "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
+          "highlightColor": "extra05-color",
+          "image": "/images/process/process-02.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Test",
+          "subtitle": "our four step process",
+          "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
+          "highlightColor": "extra06-color",
+          "image": "/images/process/process-03.jpg"
+        },
+        {
+          "id": 4,
+          "title": "Build",
+          "subtitle": "our four step process",
+          "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
+          "highlightColor": "extra07-color",
+          "image": "/images/process/process-04.jpg"
+        }
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "title": "Exabeam",
+    "subtitle": "featured case study",
+    "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
+    "image": "/images/featured/featured-image-05.jpg",
+    "counter": [
+      {
+        "title": "ROI increase",
+        "amount": 15
+      },
+      {
+        "title": "Monthly website visits",
+        "amount": 60
+      }
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=Pj_geat9hvI",
+    "projectBreif1": {
+      "image": "/images/featured/featured-brief-04.jpg",
+      "description": [
+        "Nulla et velit gravida, facilisis quam a, molestie ante. Mauris placerat suscipit dui, eget maximus tellus blandit a. Praesent non tellus sed ligula commodo blandit in et mauris. Quisque efficitur ipsum ut dolor molestie pellentesque.",
+        "Nulla pharetra hendrerit mi quis dapibus. Quisque luctus, tortor a venenatis fermentum, est lacus feugiat nisl, id pharetra odio enim eget libero."
+      ]
+    },
+    "projectBreif2": {
+      "image": "",
+      "description": [
+        "Nulla et velit gravida, facilisis quam a, molestie ante. Mauris placerat suscipit dui, eget maximus tellus blandit a. Praesent non tellus sed ligula commodo blandit in et mauris. Quisque efficitur ipsum ut dolor molestie pellentesque.",
+        "Nulla pharetra hendrerit mi quis dapibus. Quisque luctus, tortor a venenatis fermentum, est lacus feugiat nisl, id pharetra odio enim eget libero."
+      ]
+    },
+    "solution": {
+      "image": "",
+      "description": [
+        "Nulla et velit gravida, facilisis quam a, molestie ante. Mauris placerat suscipit dui, eget maximus tellus blandit a. Praesent non tellus sed ligula commodo blandit in et mauris. Quisque efficitur ipsum ut dolor molestie pellentesque.",
+        "Nulla pharetra hendrerit mi quis dapibus. Quisque luctus, tortor a venenatis fermentum, est lacus feugiat nisl, id pharetra odio enim eget libero."
+      ]
+    },
+    "process": {
+      "title": "Our design process",
+      "description": "Our comprehensive design strategy ensures a perfectly crafted design for your business.",
+      "strategies": [
+        {
+          "id": 1,
+          "title": "Discover",
+          "subtitle": "our four step process",
+          "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
+          "highlightColor": "extra04-color",
+          "image": "/images/process/process-01.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Prototype",
+          "subtitle": "our four step process",
+          "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
+          "highlightColor": "extra05-color",
+          "image": "/images/process/process-02.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Test",
+          "subtitle": "our four step process",
+          "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
+          "highlightColor": "extra06-color",
+          "image": "/images/process/process-03.jpg"
+        },
+        {
+          "id": 4,
+          "title": "Build",
+          "subtitle": "our four step process",
+          "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
+          "highlightColor": "extra07-color",
+          "image": "/images/process/process-04.jpg"
+        }
+      ]
+    }
+  }
+]

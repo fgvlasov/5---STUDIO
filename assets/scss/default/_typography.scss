@@ -1,0 +1,422 @@
+/**
+ * Typography
+ */
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	overflow: hidden;
+	overflow-y: auto;
+}
+
+body {
+	overflow: hidden;
+	font-size: $body-font-size;
+	line-height: $body-line-height;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: $primary-font;
+	color: $body-color;
+	font-weight: 400;
+	@media #{$sm-layout} {
+		font-size: 16px;
+		line-height: 26px;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+address,
+p,
+pre,
+blockquote,
+dl,
+dd,
+menu,
+ol,
+ul,
+table,
+caption,
+hr {
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $primary-font;
+	color: $heading-color;
+	font-weight: 700;
+
+	a {
+		color: inherit;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+h1 {
+	font-size: $h1;
+	line-height: 68px;
+	
+	@media #{$laptop-device} {
+		font-size: 50px;
+		line-height: 66px;
+	}
+
+	@media #{$lg-layout} {
+		font-size: 48px;
+		line-height: 64px;
+	}
+
+	@media #{$md-layout} {
+		font-size: 44px;
+		line-height: 55px;
+	}
+
+	@media #{$sm-layout} {
+		font-size: 40px;
+		line-height: 50px;
+	}
+
+	@media #{$large-mobile} {
+		font-size: 36px;
+		line-height: 45px;
+	}
+
+	&.axil-display-1 {
+		font-size: $display-1;
+		line-height: 90px;
+		@media #{$laptop-device} {
+			font-size: 55px;
+			line-height: 68px;
+		}
+		@media #{$lg-layout} {
+			font-size: 55px;
+			line-height: 68px;
+		}
+		@media #{$md-layout} {
+			font-size: 44px;
+			line-height: 55px;
+		}
+		@media #{$sm-layout} {
+			font-size: 40px;
+			line-height: 50px;
+		}
+		@media #{$large-mobile} {
+			font-size: 36px !important;
+			line-height: 45px !important;
+		}
+	}
+}
+
+
+h2 {
+	font-size: $h2;
+	line-height: 62px;
+}
+
+h3 {
+	font-size: $h3;
+	line-height: 46px;
+}
+
+h4 {
+	font-size: $h4;
+	line-height: 32px;
+}
+
+h5 {
+	font-size: $h5;
+	line-height: 26px;
+}
+
+h6 {
+	font-size: $h6;
+	line-height: 22px;
+}
+
+@media #{$md-layout} {
+	h1 {
+		font-size: $h1 - 4;
+	}
+
+	h2 {
+		font-size: $h2 - 2;
+	}
+
+	h3 {
+		font-size: $h3 - 2;
+	}
+}
+
+@media #{$sm-layout} {
+	h1 {
+		font-size: 40px;
+		line-height: 50px;
+		br {
+			display: none;
+		}
+	}
+
+	h2 {
+		font-size: 30px;
+		line-height: 40px;
+		br {
+			display: none;
+		}
+	}
+
+	h3 {
+		font-size: 24px;
+		line-height: 36px;
+		br {
+			display: none;
+		}
+	}
+	h4 {
+		font-size: 20px;
+		line-height: 29px;
+		br {
+			display: none;
+		}
+	}
+}
+
+
+p {
+	font-size: 18px;
+	line-height: 28px;
+	color: $body-color;
+	@media #{$sm-layout} {
+		font-size: 16px;
+		line-height: 26px;
+	}
+	&.subtitle-1 {
+		font-size: 15px;
+		line-height: 24px;
+		@media #{$sm-layout} {
+			font-size: 16px;
+			line-height: 26px;
+		}
+	}
+	&.subtitle-2 {
+		font-size: 20px;
+		line-height: 32px;
+		@media #{$sm-layout} {
+			font-size: 18px;
+    		line-height: 28px;
+		}
+		@media #{$md-layout} {
+			font-size: 18px;
+			line-height: 28px;
+			br {
+				display: none;
+			}
+		}
+		@media #{$sm-layout} {
+			font-size: 16px;
+			line-height: 26px;
+			br {
+				display: none;
+			}
+		}
+	}
+	&.subtitle-3 {
+		color: $darker-color;
+		font-size: 24px;
+		line-height: 38px;
+		@media #{$lg-layout} {
+			font-size: 20px;
+			line-height: 32px;
+		}
+		@media #{$sm-layout} {
+			font-size: 16px;
+    		line-height: 26px;
+		}
+		@media #{$md-layout} {
+			font-size: 20px;
+    		line-height: 34px;
+		}
+	}
+	&:last-child {
+		margin: 0;
+	}
+}
+
+
+
+
+
+/* List Style */
+ul,
+ol {
+	padding-left: 18px;
+}
+
+ul {
+	&.list-secondary {
+		li {
+			font-size: 15px;
+			position: relative;
+
+			&::before {
+				font-family: "Font Awesome 5 Pro";
+				content: "\f105";
+				position: absolute;
+				top: 0;
+				left: -18px;
+				font-size: 14px;
+				line-height: inherit;
+				color: inherit;
+				font-weight: 900;
+			}
+
+			&::after {
+				display: none;
+			}
+
+			a {
+				color: inherit;
+			}
+
+			&:hover {
+				a {
+					color: $action-color;
+					text-decoration: none;
+				}
+
+				&::before {
+					color: $action-color;
+				}
+			}
+		}
+	}
+
+	&.bullet-list {
+		li {
+			position: relative;
+    		padding-left: 20px;
+			&::after {
+				content: "";
+				position: absolute;
+				top: 50%;
+				left: 0;
+				width: 6px;
+				height: 6px;
+				display: block;
+				border-radius: 50%;
+				background: #757589;
+				transform: translateY(-50%);
+			}
+		}
+	}
+
+	li {
+		&:hover {
+			color: $action-color;
+			text-decoration: none;
+		}
+	}
+
+}
+
+ol {
+	padding-left: 18px;
+
+	li {
+		font-size: 17px;
+		line-height: 36px;
+		font-weight: 400;
+		color: #4d4d4d;
+	}
+}
+
+a:hover,
+a:focus,
+a:active {
+	outline: none;
+}
+
+a:visited {
+	color: inherit;
+}
+
+a {
+	outline: none;
+	color: $heading-color;
+	text-decoration: underline;
+	display: inline-block;
+	&:hover {
+		color: $action-color;
+	}
+}
+
+
+
+
+
+input,
+button,
+select,
+textarea {
+	background: transparent;
+	border: 1px solid $border-color;
+	transition: all 0.4s ease-out 0s;
+	color: $dark-color;
+
+	&:focus,
+	&:active {
+		outline: none;
+		border-color: $primary-color;
+	}
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button;
+}
+
+input,
+select,
+textarea {
+	width: 100%;
+	font-size: 14px;
+}
+
+input,
+select {
+	height: 40px;
+	padding: 0 15px;
+}
+
+.text-ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}

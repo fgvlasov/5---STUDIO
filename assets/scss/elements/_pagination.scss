@@ -1,0 +1,95 @@
+/* 
+Pagination Styles 
+*/
+.post-pagination {
+  margin-top: 40px;
+  width: 100%;
+  @media #{$lg-layout} {
+    margin-top: 40px;
+  }
+  @media #{$md-layout} {
+    margin-top: 30px;
+  }
+  @media #{$sm-layout} {
+    margin-top: 30px;
+  }
+  nav {
+    &.pagination {
+      display: block;
+      .screen-reader-text {
+        display: none;
+      }
+      ul {
+        position: relative;
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: -3px;
+        padding: 0;
+        li {
+          margin: 3px;
+          span {
+            line-height: 42px;
+            min-width: 42px;
+            text-align: center;
+            color: $heading-color;
+            transition: all 0.5s;
+            display: block;
+            padding: 0 15px;
+            transition: all 0.5s;
+            border: 1px solid $border-color;
+            &.current {
+              background: var(--color-primary);
+              color: #ffffff;
+              border-color: var(--color-primary);
+            }
+          }
+          button {
+            line-height: 42px;
+            min-width: 42px;
+            text-align: center;
+            color: $heading-color;
+            transition: all 0.5s;
+            display: block;
+            padding: 0 15px;
+            transition: all 0.5s;
+            border: 1px solid $border-color;
+            &:hover,
+            &.current {
+              background: var(--color-primary);
+              color: #ffffff;
+              border-color: var(--color-primary);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.axil-page-links,
+.page-links {
+  clear: both;
+  padding: 20px 0;
+  .page-link-holder {
+  }
+  .post-page-numbers {
+    line-height: 42px;
+    min-width: 42px;
+    text-align: center;
+    color: $heading-color;
+    transition: all 0.5s;
+    display: inline-block;
+    padding: 0 15px;
+    transition: all 0.5s;
+    border: 1px solid $border-color;
+    margin: 3px;
+    &.current,
+    &:hover {
+      background: var(--color-primary);
+      color: #ffffff;
+      border-color: var(--color-primary);
+    }
+  }
+}

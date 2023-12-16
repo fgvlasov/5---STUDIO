@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "name": "Madge Alvarez",
+    "image": "/images/team/team-01.jpg",
+    "designation": "CEO",
+    "department": ["Management"],
+    "socials": [
+      { "type": "facebook", "url": "#" },
+      { "type": "twitter", "url": "#" },
+      { "type": "pinterest", "url": "#" },
+      { "type": "linkedin", "url": "#" },
+      { "type": "instagram", "url": "#" },
+      { "type": "vimeo", "url": "#" },
+      { "type": "dribble", "url": "#" },
+      { "type": "behance", "url": "#" }
+    ],
+    "introduction": "Phasellus in libero et nunc malesuada tincidunt. Morbi auctor tristique semper. Nunc condimentum dapibus felis, non volutpat ligula dapibus non. Quisque varius massa magna, eget iaculis ipsum tincidunt sed. Sed tempus magna id nunc posuere auctor. Morbi aliquam a justo eget cursus. Donec at quam id ex mollis dapibus eget ac sem. Maecenas pharetra bibendum massa, ut tincidunt lectus."
+  },
+  {
+    "id": 2,
+    "name": "Jared Moreno",
+    "image": "/images/team/team-02.jpg",
+    "designation": "CEO",
+    "department": ["Management", "Designer"],
+    "socials": [
+      { "type": "facebook", "url": "#" },
+      { "type": "twitter", "url": "#" },
+      { "type": "pinterest", "url": "#" },
+      { "type": "linkedin", "url": "#" },
+      { "type": "instagram", "url": "#" },
+      { "type": "vimeo", "url": "#" },
+      { "type": "dribble", "url": "#" },
+      { "type": "behance", "url": "#" }
+    ],
+    "introduction": "Phasellus in libero et nunc malesuada tincidunt. Morbi auctor tristique semper. Nunc condimentum dapibus felis, non volutpat ligula dapibus non. Quisque varius massa magna, eget iaculis ipsum tincidunt sed. Sed tempus magna id nunc posuere auctor. Morbi aliquam a justo eget cursus. Donec at quam id ex mollis dapibus eget ac sem. Maecenas pharetra bibendum massa, ut tincidunt lectus."
+  },
+  {
+    "id": 3,
+    "name": "Margaret McKinney",
+    "image": "/images/team/team-03.jpg",
+    "designation": "CEO",
+    "department": ["Management", "App Developer"],
+    "socials": [
+      { "type": "facebook", "url": "#" },
+      { "type": "twitter", "url": "#" },
+      { "type": "pinterest", "url": "#" },
+      { "type": "linkedin", "url": "#" },
+      { "type": "instagram", "url": "#" },
+      { "type": "vimeo", "url": "#" },
+      { "type": "dribble", "url": "#" },
+      { "type": "behance", "url": "#" }
+    ],
+    "introduction": "Phasellus in libero et nunc malesuada tincidunt. Morbi auctor tristique semper. Nunc condimentum dapibus felis, non volutpat ligula dapibus non. Quisque varius massa magna, eget iaculis ipsum tincidunt sed. Sed tempus magna id nunc posuere auctor. Morbi aliquam a justo eget cursus. Donec at quam id ex mollis dapibus eget ac sem. Maecenas pharetra bibendum massa, ut tincidunt lectus."
+  },
+  {
+    "id": 4,
+    "name": "Effie Frank",
+    "image": "/images/team/team-04.jpg",
+    "designation": "CEO",
+    "department": ["Management", "Frontend"],
+    "socials": [
+      { "type": "facebook", "url": "#" },
+      { "type": "twitter", "url": "#" },
+      { "type": "pinterest", "url": "#" },
+      { "type": "linkedin", "url": "#" },
+      { "type": "instagram", "url": "#" },
+      { "type": "vimeo", "url": "#" },
+      { "type": "dribble", "url": "#" },
+      { "type": "behance", "url": "#" }
+    ],
+    "introduction": "Phasellus in libero et nunc malesuada tincidunt. Morbi auctor tristique semper. Nunc condimentum dapibus felis, non volutpat ligula dapibus non. Quisque varius massa magna, eget iaculis ipsum tincidunt sed. Sed tempus magna id nunc posuere auctor. Morbi aliquam a justo eget cursus. Donec at quam id ex mollis dapibus eget ac sem. Maecenas pharetra bibendum massa, ut tincidunt lectus."
+  },
+  {
+    "id": 5,
+    "name": "Tyler Hardy",
+    "image": "/images/team/team-05.jpg",
+    "designation": "CEO",
+    "department": ["Management", "Frontend"],
+    "socials": [
+      { "type": "facebook", "url": "#" },
+      { "type": "twitter", "url": "#" },
+      { "type": "pinterest", "url": "#" },
+      { "type": "linkedin", "url": "#" },
+      { "type": "instagram", "url": "#" },
+      { "type": "vimeo", "url": "#" },
+      { "type": "dribble", "url": "#" },
+      { "type": "behance", "url": "#" }
+    ],
+    "introduction": "Phasellus in libero et nunc malesuada tincidunt. Morbi auctor tristique semper. Nunc condimentum dapibus felis, non volutpat ligula dapibus non. Quisque varius massa magna, eget iaculis ipsum tincidunt sed. Sed tempus magna id nunc posuere auctor. Morbi aliquam a justo eget cursus. Donec at quam id ex mollis dapibus eget ac sem. Maecenas pharetra bibendum massa, ut tincidunt lectus."
+  },
+  {
+    "id": 6,
+    "name": "Effie Arnold",
+    "image": "/images/team/team-06.jpg",
+    "designation": "CEO",
+    "department": ["Management", "Designer"],
+    "socials": [
+      { "type": "facebook", "url": "#" },
+      { "type": "twitter", "url": "#" },
+      { "type": "pinterest", "url": "#" },
+      { "type": "linkedin", "url": "#" },
+      { "type": "instagram", "url": "#" },
+      { "type": "vimeo", "url": "#" },
+      { "type": "dribble", "url": "#" },
+      { "type": "behance", "url": "#" }
+    ],
+    "introduction": "Phasellus in libero et nunc malesuada tincidunt. Morbi auctor tristique semper. Nunc condimentum dapibus felis, non volutpat ligula dapibus non. Quisque varius massa magna, eget iaculis ipsum tincidunt sed. Sed tempus magna id nunc posuere auctor. Morbi aliquam a justo eget cursus. Donec at quam id ex mollis dapibus eget ac sem. Maecenas pharetra bibendum massa, ut tincidunt lectus."
+  }
+]

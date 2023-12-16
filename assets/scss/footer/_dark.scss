@@ -1,0 +1,843 @@
+/*---------------------
+    Dark Style Css  
+----------------------*/
+body {
+  &.active-dark-mode {
+    background: #18191a;
+    color: #d3d3d4;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: #d3d3d4;
+    }
+
+    p {
+      color: #d3d3d4;
+    }
+
+    .bg-color-white {
+      background: #18191a;
+    }
+
+    .bg-color-lightest {
+      background: #242526;
+    }
+
+    .bg-color-extra09 {
+      background: #18191a;
+    }
+
+    .axil-menuToggle {
+      background: #18191a;
+    }
+  }
+}
+
+body.active-dark-mode .theme-gradient {
+  background: #242526;
+}
+
+body.active-dark-mode ul.mainmenu li a {
+  color: #d3d3d4;
+}
+
+body.active-dark-mode #Keystroke-Startup-la tspan {
+  color: #d3d3d4;
+  fill: #fff;
+}
+
+body.active-dark-mode .ax-search-area .search-trigger i {
+  color: #d3d3d4;
+}
+
+body.active-dark-mode a.axil-button,
+body.active-dark-mode button.axil-button {
+  color: #d3d3d4;
+}
+
+body.active-dark-mode a.axil-button.btn-transparent::before,
+body.active-dark-mode button.axil-button.btn-transparent::before {
+  border: 2px solid #4e4e4e;
+}
+
+body.active-dark-mode a.axil-button.btn-transparent span.button-icon,
+body.active-dark-mode button.axil-button.btn-transparent span.button-icon {
+  border-color: transparent transparent transparent #d3d3d4;
+}
+
+/*---------------------
+    Header Area  
+----------------------*/
+
+body.active-dark-mode ul.mainmenu li.has-dropdown ul.axil-submenu {
+  background: #18191a;
+}
+
+/*-------------------------
+Home Version One 
+----------------------------*/
+
+body.active-dark-mode .axil-service {
+  background: #18191a;
+}
+
+body.active-dark-mode .axil-service:hover {
+  background: transparent;
+}
+
+body.active-dark-mode .axil-service .inner::after {
+  background: #242526;
+}
+
+body.active-dark-mode .bg-color-lightest .axil-service .inner::after {
+  background: #000;
+}
+
+body.active-dark-mode .bg-color-lightest .axil-service.active:hover {
+  background: transparent;
+}
+
+body.active-dark-mode .bg-color-lightest .axil-service {
+  background: transparent;
+}
+
+body.active-dark-mode .bg-color-lightest .axil-service .inner::before {
+  border: 4px solid #000000;
+}
+
+body.active-dark-mode .axil-service .inner::before {
+  border: 4px solid #242526;
+}
+
+body.active-dark-mode .axil-counterup::after,
+body.active-dark-mode .axil-contact-form.contact-form-style-1::after {
+  background: #242526;
+  box-shadow: 4px 2px 9px 7px rgba(0, 0, 0, 0.1);
+}
+
+body.active-dark-mode #scrollUp,
+body.active-dark-mode #scrollUp::after {
+  background: #18191a;
+}
+
+body.active-dark-mode #scrollUp span.text {
+  color: #fff;
+}
+
+body.active-dark-mode .axil-testimonial .inner::after {
+  background: #18191a;
+}
+
+body.active-dark-mode .axil-blog .content .content-wrap::after {
+  background: #18191a;
+}
+
+body.active-dark-mode .axil-pricing-table.active .axil-pricing-inner::after {
+  background: #18191a;
+}
+
+body.active-dark-mode .messonry-button button::after {
+  background: #18191a;
+}
+
+body.active-dark-mode .haeder-default.sticky {
+  background: #242526;
+}
+
+body.active-dark-mode
+.axil-slide.slide-style-default
+.topskew-thumbnail-group
+.thumbnail::before {
+  border: 4px solid #18191a;
+}
+
+body.active-dark-mode .axil-service.active .inner .content a.axil-button {
+  color: #d3d3d4;
+}
+
+body.active-dark-mode .axil-service .inner .content a.axil-button::after {
+  background: #d3d3d4;
+}
+
+body.active-dark-mode
+.axil-contact-form.contact-form-style-1
+.callto-action-wrapper
+span
+i {
+  color: #d3d3d4;
+}
+
+body.active-dark-mode
+.axil-contact-form.contact-form-style-1
+.callto-action-wrapper
+span
+a {
+  color: #d3d3d4;
+}
+
+body.active-dark-mode .form-group label {
+  color: #d3d3d4;
+}
+
+body.active-dark-mode .form-group input {
+  border-bottom: 2px solid #4e4e4e;
+}
+
+body.active-dark-mode .messonry-button button {
+  color: #d3d3d4;
+}
+
+body.active-dark-mode .messonry-button button.is-checked {
+  color: var(--color-primary);
+}
+
+body.active-dark-mode .portfolio .inner .thumb::before {
+  border: 4px solid #18191A;
+}
+
+body.active-dark-mode .axil-testimonial .description a.axil-link-button {
+  color: #d3d3d4;
+}
+
+body.active-dark-mode .axil-testimonial.active .description a.axil-link-button {
+  color: var(--color-primary);
+}
+
+body.active-dark-mode .axil-pricing-table .axil-pricing-inner {
+  background: #18191a;
+}
+
+body.active-dark-mode a.axil-button.btn-solid:hover {
+  color: #fff;
+}
+
+body.active-dark-mode
+.axil-pricing-table
+.pricing-body
+.inner
+ul.list-style
+li {
+  color: #d3d3d4;
+}
+
+body.active-dark-mode .brand-list li a img {
+  filter: contrast(0);
+}
+
+body.active-dark-mode .bg-color-white .brand-list::before {
+  background: #4e4e4e;
+}
+
+body.active-dark-mode .bg-color-white .brand-list li a {
+  border-right: 1px solid #4e4e4e;
+}
+
+body.active-dark-mode .brand-list li a:hover {
+  background: #242526;
+}
+
+body.active-dark-mode .axil-call-to-action .callto-action > span.text {
+  color: #f6f5fa;
+}
+
+body.active-dark-mode .axil-call-to-action .callto-action > span a,
+body.active-dark-mode .axil-call-to-action .callto-action > span {
+  color: #d3d3d4;
+}
+
+body.active-dark-mode .axil-footer.theme-gradient-2 {
+  position: relative;
+  z-index: 1;
+}
+
+body.active-dark-mode .axil-footer.theme-gradient-2::after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 0;
+  content: "";
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(180deg, #18191a 0%, rgba(24, 25, 26, 0) 100%);
+}
+
+body.active-dark-mode .bg_image--2 {
+  background-image: url(/images/bg/footer.png);
+  background-color: #242526;
+  position: relative;
+  z-index: 2;
+}
+
+body.active-dark-mode .ft-social-share li a {
+  color: #d3d3d4;
+}
+
+body.active-dark-mode .footer-default .footer-widget-item ul.ft-menu li a {
+  color: #d3d3d4;
+}
+
+body.active-dark-mode .axil-basic-thine-line {
+  border-top: 1px solid #4e4e4e;
+}
+
+body.active-dark-mode .copyright-default .quick-contact ul li a {
+  color: #d3d3d4;
+}
+
+body.active-dark-mode .privacy-policy-area ul li {
+  color: #d3d3d4;
+}
+
+body.active-dark-mode .theme-gradient-7 {
+  background: #242526;
+}
+
+body.active-dark-mode .axil-error-not-found .shape-group .shape.shape-03 {
+  display: none;
+}
+
+body.active-dark-mode .axil-error .text-image {
+  filter: brightness(0.2);
+}
+
+body.active-dark-mode .axil-comming-soon .shape-wrapper .shape.shape-03 {
+  display: none;
+}
+
+body.active-dark-mode .axil-comming-soon .shape-wrapper .shape.shape-04 img {
+  filter: brightness(0.1);
+}
+
+/*--------------------------
+    Home version Two  
+----------------------------*/
+body.active-dark-mode .axil-slide.banner-technology.theme-gradient::after {
+  background: linear-gradient(180deg, #002132 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+body.active-dark-mode .axil-service .inner {
+  background: #242526;
+}
+
+body.active-dark-mode .axil-service-area.bg-color-lightest .axil-service .inner {
+  background: #18191a;
+}
+
+body.active-dark-mode .axil-service.service-bg-gray.active .inner {
+  background: #242526;
+}
+
+body.active-dark-mode .theme-gradient-3 {
+  background: #18191a;
+}
+
+body.active-dark-mode .axil-slide.slide-style-3::before {
+  background: #18191a;
+}
+
+body.active-dark-mode .marque-images {
+  display: none;
+}
+
+body.active-dark-mode .axil-case-study h4.title a {
+  color: #000248;
+  transition: 0.3s;
+}
+
+body.active-dark-mode .axil-social-icons li a {
+  color: #d3d3d4;
+}
+
+body.active-dark-mode .brand-list::before {
+  background: #242526;
+}
+
+body.active-dark-mode .brand-list li a {
+  border-right: 1px solid #242526;
+}
+
+body.active-dark-mode .brand-list li:nth-child(3) a {
+  border-color: transparent !important;
+}
+
+body.active-dark-mode .brand-list li:last-child a {
+  border-color: transparent !important;
+}
+
+body.active-dark-mode .contact-form-style-2::after {
+  background: #18191a;
+}
+
+body.active-dark-mode .form-group textarea {
+  border-bottom: 2px solid #4E4E4E;
+}
+
+body.active-dark-mode ul.followers-list li a span {
+  color: #d3d3d4;
+}
+
+/*--------------------------
+    Home version Four  
+----------------------------*/
+body.active-dark-mode .theme-gradient-4 {
+  background: #242526;
+}
+
+body.active-dark-mode g#Home-04 tspan {
+  fill: #fff;
+}
+
+body.active-dark-mode .axil-slide.slide-style-4 .follow-us::before {
+  background-color: #4e4e4e;
+}
+
+body.active-dark-mode .axil-call-to-action.callaction-style-2 .inner::after {
+  background: #242526;
+}
+
+body.active-dark-mode .axil-slide.slide-style-4 .content p {
+  color: #d3d3d4;
+}
+
+body.active-dark-mode .theme-gradient-8 {
+  background: #242526;
+}
+
+body.active-dark-mode .axil-scroll-navigation .nav {
+  background: #18191a;
+}
+
+body.active-dark-mode .axil-scroll-navigation .nav::after {
+  background: #4e4e4e;
+}
+
+body.active-dark-mode
+.axil-accordion
+.card
+.card-header
+h5
+.btn.btn-link.collapsed {
+  color: #d3d3d4;
+}
+
+body.active-dark-mode .axil-single-widget.search .blog-search .search-button i {
+  color: #d3d3d4;
+}
+
+body.active-dark-mode
+.axil-single-widget.category
+ul.category-list
+li
+a::after {
+  border-color: transparent transparent transparent #d3d3d4;
+}
+
+body.active-dark-mode .axil-single-widget.tags ul.tags-list li a {
+  background: #000000;
+  color: #d3d3d4;
+}
+
+body.active-dark-mode .axil-blog-list.sticky-blog {
+  background: #242526;
+}
+
+body.active-dark-mode .axil-blog-list.quote-blog {
+  background: #242526;
+}
+
+body.active-dark-mode .axil-blog-details-area .axil-quote {
+  background: #242526;
+}
+
+body.active-dark-mode .axil-blog-details-area .axil-blog-author {
+  background: #242526;
+}
+
+body.active-dark-mode .axil-blog-details-area .axil-comment-form .inner::after {
+  background: #242526;
+}
+
+body.active-dark-mode .axil-blog-details-area ul.bullet-list {
+  border-bottom: 1px solid #4e4e4e;
+}
+
+body.active-dark-mode .axil-blog-details-area .blog-share .text {
+  color: #d3d3d4;
+}
+
+body.active-dark-mode .side-nav {
+  background: #18191a;
+}
+
+body.active-dark-mode .close-sidenav button.close-button i {
+  color: #d3d3d4;
+}
+
+body.active-dark-mode
+.side-nav
+.side-nav-inner
+.side-nav-content
+ul.main-navigation
+li
+a {
+  color: #d3d3d4;
+}
+
+body.active-dark-mode
+.side-nav
+.side-nav-inner
+.side-nav-content
+.axil-contact-info-inner
+h5.title,
+body.active-dark-mode
+.side-nav
+.side-nav-inner
+.side-nav-content
+.axil-contact-info-inner
+span.title,
+body.active-dark-mode
+.side-nav
+.side-nav-inner
+.side-nav-content
+.axil-contact-info-inner
+.axil-contact-info
+.address
+p
+i {
+  color: #d3d3d4;
+}
+
+body.active-dark-mode .axil-pricing-table.active a.axil-button {
+  color: #ffffff;
+}
+
+body.active-dark-mode
+.axil-pricing-table.active
+a.axil-button.btn-transparent
+span.button-icon,
+body.active-dark-mode
+.axil-pricing-table.active
+button.axil-button.btn-transparent
+span.button-icon {
+  border-color: transparent transparent transparent var(--color-primary);
+}
+
+body.active-dark-mode .card {
+  background: transparent;
+  border-bottom: 1px solid #242526;
+}
+
+body.active-dark-mode .axil-accordion--2 .card {
+  border: 1px solid #4e4e4e;
+}
+
+body.active-dark-mode
+.axil-accordion--2
+.card
+.card-header
+.btn.btn-link.collapsed {
+  color: #d3d3d4;
+}
+
+body.active-dark-mode
+.axil-accordion--2
+.card
+.card-header
+.btn.btn-link.collapsed::after {
+  border-color: #d3d3d4 transparent transparent;
+}
+
+body.active-dark-mode .axil-menuToggle span {
+  background: #d3d3d4;
+}
+
+body.active-dark-mode
+.axil-featured
+.inner
+.axil-counterup-area.separator-line-vertical
+.single-counterup
++ .single-counterup::after {
+  background-color: #4e4e4e;
+}
+
+body.active-dark-mode
+.axil-slide.slide-style-default
+.topskew-thumbnail-group
+.thumbnail
+img.light-image {
+  display: none;
+}
+
+body.active-dark-mode
+.axil-slide.slide-style-default
+.topskew-thumbnail-group
+.thumbnail
+img.dark-image {
+  display: block;
+}
+
+body.active-dark-mode .axil-service::before {
+  display: none;
+}
+
+body.active-dark-mode .axil-contact-form.contact-form-style-1::before,
+body.active-dark-mode .axil-counterup::before,
+body.active-dark-mode .axil-testimonial .inner::before,
+body.active-dark-mode .axil-blog.active .content .content-wrap::before,
+body.active-dark-mode .contact-form-style-2::before,
+body.active-dark-mode
+.axil-blog-details-area
+.axil-comment-form
+.inner::before {
+  display: none;
+}
+
+body.active-dark-mode .axil-testimonial .clint-info-wrapper .client-info span {
+  color: #919191;
+}
+
+body.active-dark-mode .axil-pricing-table.active::before {
+  border: 4px solid #4e4e4e;
+}
+
+body.active-dark-mode a.axil-button.btn-solid::after,
+body.active-dark-mode button.axil-button.btn-solid::after {
+  border: 2px solid var(--color-primary);
+}
+
+body.active-dark-mode .axil-pricing-table .pricing-header {
+  border-bottom: 1px solid #303031;
+}
+
+body.active-dark-mode
+.axil-pricing-table
+.pricing-header
+.price-wrapper
+.date-option
+select {
+  border-bottom: 1px solid #303031;
+}
+
+body.active-dark-mode .axil-call-to-action-area.shape-position {
+  background: #000000;
+}
+
+body.active-dark-mode .icon-shape-10:before {
+  color: #333;
+}
+
+body.active-dark-mode .icon-shape-06:before {
+  color: #232427;
+}
+
+body.active-dark-mode .icon-shape-02:before {
+  color: #232427;
+}
+
+body.active-dark-mode .bg-color-lightest .brand-list::before {
+  background: #18191a;
+}
+
+body.active-dark-mode .bg-color-lightest .brand-list li a {
+  border-right: 1px solid #18191a;
+}
+
+body.active-dark-mode .scroll-down_btn .axil-scrollbown {
+  border: 3px solid #232427;
+}
+
+body.active-dark-mode .bg-color-white .axil-testimonial .inner::after {
+  background: #232427;
+}
+
+body.active-dark-mode a.axil-button.btn-solid.btn-extra07-color::after {
+  border: 2px solid #007aff;
+}
+
+body.active-dark-mode a.axil-button.btn-solid:hover span.button-icon,
+body.active-dark-mode button.axil-button.btn-solid:hover span.button-icon {
+  border-color: transparent transparent transparent #fff;
+}
+
+body.active-dark-mode .icon-breadcrumb-3:before {
+  color: #18191a;
+}
+
+body.active-dark-mode
+.axil-working-process
+.content
+.inner
+.section-title
+span.process-step-number {
+  border: 1px solid #4e4e4e;
+}
+
+body.active-dark-mode .axil-working-process-area.theme-gradient-4 {
+  background: #232427;
+}
+
+body.active-dark-mode .icon-bcm-01:before {
+  color: #232427;
+}
+
+body.active-dark-mode .axil-single-widget.search .blog-search input {
+  border: 1px solid #4e4e4e;
+}
+
+body.active-dark-mode .axil-single-widget.category ul.category-list li a {
+  border-bottom: 1px solid #4e4e4e;
+}
+
+body.active-dark-mode .axil-single-widget.category ul.category-list li a {
+  color: #d3d3d4;
+}
+
+body.active-dark-mode
+.axil-single-widget.search
+.blog-search
+.search-button::before {
+  background: #4e4e4e;
+}
+
+body.active-dark-mode ul.social-share li a {
+  color: #d3d3d4;
+}
+
+body.active-dark-mode ul.social-share li a i {
+  color: #d3d3d4;
+}
+
+body.active-dark-mode .bg-color-white .portfolio .inner .thumb::before {
+  border: 4px solid #242526;
+}
+
+body.active-dark-mode .bg-color-white .messonry-button button::after {
+  background: #242526;
+}
+
+body.active-dark-mode .messonry-button button.is-checked::before {
+  display: none;
+}
+
+body.active-dark-mode .nav-tabs.team-nab-tabs li a {
+  color: #e4e6eb;
+}
+
+body.active-dark-mode .nav-tabs.team-nab-tabs li a.nav-link.active::before {
+  background: #18191a;
+}
+
+body.active-dark-mode .axil-team .inner .thumbnail::before {
+  border: 2px solid #18191a;
+}
+
+body.active-dark-mode
+.axil-breadcrumb-area.breadcrumb-style-2
+.thumbnail
+.image-group::before {
+  border: 4px solid #4e4e4e;
+}
+
+body.active-dark-mode .axil-team-details-wrapper .thumbnail::before {
+  border: 2px solid #4e4e4e;
+}
+
+body.active-dark-mode .bg-color-lightest.color-darkest {
+  background: #18191a;
+}
+
+body.active-dark-mode .axil-address::before {
+  display: none;
+}
+
+body.active-dark-mode .axil-address::after {
+  background: #242526;
+}
+
+body.active-dark-mode .axil-address .inner .icon i {
+  color: #d3d3d4;
+}
+
+body.active-dark-mode .header-style-four .axil-menuToggle {
+  background: #000;
+}
+
+body.active-dark-mode .client-list .slick-slide a img {
+  filter: contrast(0);
+}
+
+body.active-dark-mode .axil-website img.dark-image {
+  display: block;
+}
+
+body.active-dark-mode .axil-website img.light-image {
+  display: none;
+}
+
+body.active-dark-mode
+.axil-single-widget.small-post-wrapper
+.small-post
+.content
+ul.blog-meta
+li {
+  color: #d3d3d4;
+}
+
+body.active-dark-mode a.axil-button:hover,
+body.active-dark-mode button.axil-button:hover {
+  color: #ffffff;
+}
+
+body.active-dark-mode a.axil-button.btn-transparent:hover span.button-icon,
+body.active-dark-mode
+button.axil-button.btn-transparent:hover
+span.button-icon {
+  border-color: transparent transparent transparent #ffffff;
+}
+
+body.active-dark-mode .form-group input[type="submit"] {
+  border: 2px solid #4e4e4e;
+  background: transparent;
+}
+
+body.active-dark-mode .form-group input[type="submit"] {
+  color: #fff;
+}
+
+body.active-dark-mode .side-nav .side-nav-inner .side-nav-content .axil-contact-info-inner .axil-contact-info .address p a {
+  color: #d3d3d4;
+}
+
+body.active-dark-mode .ax-menubar div {
+  color: #ffffff;
+}
+
+body.active-dark-mode .portfolio-slider .thumbnail img.light-image {
+  display: none !important;
+}
+
+body.active-dark-mode .portfolio-slider .thumbnail img.dark-image {
+  display: block !important;
+}
+
+body.active-dark-mode .post-pagination nav.pagination ul li button {
+  color: #d3d3d4;
+}
+
+body.active-dark-mode {
+  .axil-bg-oval {
+    .bg-shape-container {
+      .light {
+        display: none;
+      }
+
+      .dark {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+[
+  {
+    "id": 1,
+    "title": "Home",
+    "url": "#",
+    "hasChildren": true,
+    "clildrens": [
+      { "id": 1, "title": "Digital Agency", "url": "/home-01" },
+      { "id": 2, "title": "Creative Agency", "url": "/home-02" },
+      { "id": 3, "title": "Personal Portfolio", "url": "/home-03" },
+      { "id": 4, "title": "Home Startup", "url": "/home-04" },
+      { "id": 5, "title": "Corporate Agency", "url": "/home-05" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Services",
+    "url": "#",
+    "hasChildren": true,
+    "clildrens": [
+      { "id": 1, "title": "Services", "url": "/services" },
+      { "id": 2, "title": "Services Two", "url": "/service-two" },
+      {
+        "id": 3,
+        "title": "Services Details",
+        "url": "/services/default/design"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "About Us",
+    "url": "/about",
+    "hasChildren": false
+  },
+  {
+    "id": 4,
+    "title": "Blog",
+    "url": "#",
+    "hasChildren": true,
+    "clildrens": [
+      { "id": 1, "title": "Blog List", "url": "/blog" },
+      { "id": 2, "title": "Blog List Two", "url": "/blog-list-two" },
+      { "id": 3, "title": "Blog Details", "url": "/blog/blog-1" }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Pages",
+    "url": "#",
+    "hasChildren": true,
+    "clildrens": [
+      { "id": 1, "title": "Button", "url": "/button" },
+      { "id": 2, "title": "Typography", "url": "/typography" },
+      { "id": 3, "title": "Testimonial", "url": "/testimonial" },
+      { "id": 4, "title": "Portfolio", "url": "/portfolio" },
+      {
+        "id": 5,
+        "title": "Portfolio Details",
+        "url": "/portfolio/creative-agency"
+      },
+      { "id": 6, "title": "Pricing", "url": "/pricing" },
+      { "id": 7, "title": "Services", "url": "/services" },
+      { "id": 8, "title": "Team", "url": "/team" },
+      { "id": 9, "title": "Team Details", "url": "/team/1" },
+      { "id": 10, "title": "Case Study", "url": "/case-study" },
+      { "id": 11, "title": "Case Study Details", "url": "/case-study/los-marineros" },
+      { "id": 12, "title": "Comming Soon", "url": "/comming-soon" },
+      { "id": 13, "title": "404 Page", "url": "/404" }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Contact",
+    "url": "/contact",
+    "hasChildren": false
+  }
+]

@@ -1,0 +1,413 @@
+/*=======================
+Contact Form Style 
+=========================*/
+
+.axil-contact-form {
+    &.contact-form-style-1 {
+        padding: 50px;
+        position: relative;
+        z-index: 1;
+        max-width: 490px;
+        -webkit-perspective: 1000px;
+        perspective: 1000px;
+        padding-left: 60px;
+        z-index: 2;
+        @media #{$lg-layout} {
+            padding: 30px 35px;
+        }
+        @media #{$sm-layout} {
+            padding: 50px 20px;
+            padding-left: 20px;
+            max-width: inherit;
+        }
+        &::after {
+            background: #ffffff;
+            position: absolute;
+            content: "";
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            -webkit-transform-style: preserve-3d;
+            -webkit-transform-style: preserve-3d;
+            -webkit-transform: rotateY(-10deg);
+            transform-style: preserve-3d;
+            transform: rotateY(-10deg);
+            box-shadow: 0 0 1px transparent;
+            @media #{$sm-layout} {
+                transform: rotateY(0);
+            }
+        }
+        &::before {
+            width: 92%;
+            height: 92%;
+            left: -20px;
+            bottom: -20px;
+            background:  rgba(0, 2, 72, 0.1);
+            content: "";
+            position: absolute;
+            z-index: -1;
+            transform-style: preserve-3d;
+            transform: rotateY(-10deg);
+            filter: blur(50px);
+            @media #{$sm-layout} {
+                display: none;
+            }
+        }
+        .callto-action-wrapper {
+            span{
+                &.text{
+                    font-size: 15px;
+                    line-height: 24px;  
+                    display: inline-block;
+                    padding-right: 10px;
+                }
+                i { 
+                    font-size: 22px;
+                    font-weight: 400;
+                    color: #000248;
+                    line-height: 26px;
+                    padding-right: 4px;
+                }
+                a {
+                    font-size: 22px; 
+                    font-weight: 700;
+                    color: #000248;
+                    line-height: 26px;
+                    text-decoration: none;
+                    @extend %transition;
+                    @media #{$sm-layout} {
+                        font-size: 14px;
+                    }
+                    &:hover{
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+        .shape-group {
+            @media #{$lg-layout} {
+                display: none;
+            }
+           
+            .shape {
+                position: absolute;
+                right: -193px;
+                top: 50%;
+                z-index: -1;
+                @media #{$lg-layout} {
+                    right: -151px;
+                }
+                @media #{$sm-layout} {
+                    display: none;
+                }
+                &.shape-01 {
+                    right: -64px;
+                    top: 26%;
+                }
+            }
+        }
+    }
+}
+
+.contact-form-style-2 {
+    position: relative;
+    z-index: 2;
+    .inner {
+        padding: 70px 50px;
+        @media #{$md-layout} {
+            padding: 30px;
+        }
+        @media #{$sm-layout} {
+            padding: 30px 20px;
+        }
+    }
+    &::after {
+        background: #ffffff;
+        position: absolute;
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        transform: perspective(700px) rotateY(-2deg);
+        @media #{$md-layout} {
+            transform: perspective(0px) rotateY(0deg);
+        }
+        @media #{$sm-layout} {
+            transform: perspective(0px) rotateY(0deg);
+        }
+    }
+    &::before {
+        width: 92%;
+        height: 92%;
+        left: -20px;
+        bottom: -20px;
+        background:  rgba(0, 2, 72, 0.1);
+        content: "";
+        position: absolute;
+        z-index: -1;
+        transform-style: preserve-3d;
+        transform: rotateY(-10deg);
+        filter: blur(50px);
+        @media #{$sm-layout} {
+            display: none;
+        }
+    }
+}
+.axil-contact-area {
+    &.axil-shape-position {
+        position: relative;
+        z-index: 2;
+        .shape-group{
+            @media #{$sm-layout} {
+                display: none;
+            }
+            .shape {
+                position: absolute;
+                z-index: -1;
+                &.shape-01 {
+                    left: 43%;
+                    top: 50%;
+                    z-index: 1;
+                }
+                &.shape-02 {
+                    left: 40%;
+                    top: 50%;
+                    z-index: 1;
+                }
+                &.shape-03 {
+                    left: 30%;
+                    top: 46%;
+                }
+            }
+        }
+    }
+}
+
+
+/* Form Group  */
+.form-group {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 30px;
+    label {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        top: 9px;
+        color: #757589;
+        transition: 0.3s;
+        z-index: -1;
+        letter-spacing: 0.5px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    input {
+        border: 0;
+        border-bottom: 2px solid #C7C7D5;
+        background-color: transparent;
+        padding-bottom: 8px;
+        padding-top: 8px;
+    }
+    input[type="submit"] {
+        border: 2px solid #000248;
+        background: #ffffff;
+        color: #000248;
+        font-size: 16px;
+        font-weight: 700;
+        height: 46px;
+        line-height: 44px;
+        padding: 0;
+        text-transform: capitalize;
+        @extend %transition;
+        &:hover {
+            background: #000248;
+            color: #ffffff;
+        }
+    }
+    textarea {
+        border: 0;
+        min-height: 165px;
+        padding-bottom: 8px;
+        padding-top: 8px;
+        border-bottom: 2px solid #C7C7D5;
+        background-color: transparent;
+        resize: none;
+    }
+    span {
+        &.focus-border {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: $primary-color;
+            transition: 0.4s;
+        }
+    }
+    &.focused {
+        label {
+            top: -10px;
+            font-size: 12px;
+            color: $primary-color;
+            transition: 0.3s;
+        }
+        span {
+            &.focus-border {
+                width: 100%;
+                transition: 0.4s;
+            }
+        }
+    }
+}
+
+
+
+
+/*--------------------------
+    Axil Address Area  
+----------------------------*/
+.axil-address {
+    padding: 50px 50px;
+    position: relative;
+    position: relative;
+    z-index: 2;
+    max-width: 450px;
+
+    @media #{$sm-layout} {
+        padding: 30px 15px;
+    }
+    &::after {
+        background: #ffffff;
+        position: absolute;
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        -webkit-transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
+        -webkit-transform: rotateY(-10deg);
+        transform-style: preserve-3d;
+        transform: rotateY(-10deg);
+    }
+    &::before {
+        width: 92%;
+        height: 92%;
+        left: -20px;
+        bottom: -20px;
+        background: rgba(0,2,72,0.1);
+        content: "";
+        position: absolute;
+        z-index: -1;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transform: rotateY(-10deg);
+        transform: rotateY(-10deg);
+        -webkit-filter: blur(50px);
+        filter: blur(50px);
+        @media #{$sm-layout} {
+            display: none;
+        }
+    }
+    .inner {
+        .icon {
+            margin-bottom: 18px;
+            @media #{$sm-layout} {
+                margin-bottom: 7px;
+            }
+            i {
+                color: $heading-color;
+                font-size: 36px;
+                font-weight: 400;
+            }
+        }
+        .content {
+            h4 {
+                &.title {
+                    font-size: 26px;
+                    font-weight: 700;
+                    line-height: 32px;
+                    margin-bottom: 20px;
+                    @media #{$sm-layout} {
+                        margin-bottom: 6px;
+                    }
+                }
+            }
+            p {
+                a {
+                    color: $primary-color;
+                    font-weight: 700;
+                    font-size: 22px;
+                    text-decoration: none;
+                    
+                }
+                & + p {
+                    margin-top: 20px;
+                    @media #{$sm-layout} {
+                        margin-top: 6px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*-------------------------
+Axil Office Location  
+---------------------------*/
+
+
+.axil-office-location{
+    .thumbnail{
+        margin-bottom: 30px;
+        img{
+            width: 100%;
+        }
+    }
+    .content{
+        h4 {
+            &.title {
+                margin-bottom: 15px;
+            }
+        }
+        p {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+/*------------------
+Form Message 
+---------------------*/
+p {
+    &.form-messege {
+        &.error {
+            margin-top: 20px;
+            color: #f10;
+        }
+        &.success {
+            color: green;
+            margin-top: 20px;
+            opacity: 0.8;
+        }
+    }
+}
+
+
+
+
+
+
+

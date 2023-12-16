@@ -1,0 +1,383 @@
+/*===========================
+    Start Footer Area 
+=============================*/
+
+.footer-default{
+    .footer-widget-item{
+        .title {
+            font-size: 22px;
+            margin-bottom: 30px;
+        }
+        &.axil-border-right {
+            position: relative;
+            &::after {
+                position: absolute;
+                right: 7%;
+                content: "";
+                height: 100%;
+                width: 1px;
+                background: #C7C7D5;
+                top: 0;
+                @media #{$lg-layout} {
+                    display: none;
+                }
+                @media #{$md-layout} {
+                    display: none;
+                }
+                @media #{$sm-layout} {
+                    display: none;
+                }
+            }
+        }
+        h2 {
+            margin-bottom: 10px;
+        }
+        p{
+            margin-bottom: 30px;
+            @media #{$sm-layout} {
+                margin-bottom: 10px;
+            }
+        }
+        ul{
+            &.ft-menu{
+                li {
+                    a{
+                        color: $body-color;
+                        line-height: 28px;
+                        padding: 0;
+                        @extend %fontWeight400;
+                        text-decoration: none;
+                        &:hover {
+                            color: $action-color;
+                        }
+                    }
+                    & + li{
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+        &.widget-support{
+            position: relative;
+            margin-left: -37px;
+            @media #{$lg-layout} {
+                margin-left: 0;
+            }
+            @media #{$md-layout} {
+                margin-left: 0;
+            }
+            @media #{$sm-layout} {
+                margin-left: 0;
+            }
+        }
+    }
+
+    // Footer Style Three 
+    &.footer-style-3 {
+        .footer-widget-item {
+            .logo {
+                a {
+                    svg {
+                        @media #{$lg-layout} {
+                            width: 200px;
+                        }
+                    }
+                }
+            }
+
+            h6{
+                &.title{
+                    color: #ffffff;
+                    font-size: 22px;
+                    line-height: 26px;
+                    font-weight: 700;
+                    margin-bottom: 40px;
+                    @media #{$md-layout} {
+                        margin-bottom: 20px;
+                    }
+                    @media #{$sm-layout} {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+            h2 {
+                margin-bottom: 10px;
+            }
+            p {
+                margin-bottom: 30px;
+            }
+            ul {
+                &.ft-menu {
+                    li {
+                        a {
+                            color: #C7C7D6;
+                            padding: 0;
+                            text-decoration: none;
+                            font-size: 18px;
+                            @media #{$lg-layout} {
+                                font-size: 16px;
+                                line-height: 20px;
+                            }
+                            @media #{$md-layout} {
+                                line-height: 20px;
+                            }
+                            &:hover {
+                                color: $action-color;
+                            }
+                        }
+                    }
+                }
+            }
+            .axil-ft-address {
+                margin-top: 35px;   
+                @media #{$md-layout} {
+                    margin-top: 16px;
+                }
+                @media #{$sm-layout} {
+                    margin-top: 16px;
+                }
+                .address {
+                    p {
+                        color: #C7C7D6;
+                        font-size: 18px;
+                        line-height: 28px;
+                        font-weight: 400;
+                        margin-bottom: 0;
+                        span {
+                            font-size: 16px;
+                            line-height: 22px;
+                            display: inline-block;
+                            font-weight: 700;
+                            padding-right: 12px;
+                        }
+                        a {
+                            color: #C7C7D6;
+                            text-decoration: none;
+                            font-weight: 400;
+                        }
+                        & + p {
+                            margin-top: 20px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+        .copyright-default {
+            .inner {
+                p {
+                    color: #F6F5FA;
+                    font-size: 14px;
+                }
+            }
+            .quick-contact {
+                ul {
+                    li {
+                        a {
+                            color: #F6F5FA;
+                            font-size: 14px;
+                            &:hover {
+                                color: $action-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.bg_image--2 {
+    background-repeat: no-repeat;
+    background-size: inherit;
+    background-position: top right;
+}
+
+
+.copyright-default {
+    .inner {
+        p {
+            font-size: 14px;
+        }
+    }
+    .quick-contact {
+        ul {
+            li {
+                a {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+/*--------------------------
+    Newsletter Form  
+----------------------------*/
+.newsletter-form {
+    display: flex;
+    align-items: flex-end;
+    @media #{$md-layout} {
+        display: block;
+    }
+    @media #{$sm-layout} {
+        display: block;
+    }
+    input {
+        width: 330px;
+        padding-bottom: 8px;
+        @media #{$lg-layout} {
+            width: 250px;
+        }
+    }
+    .axil-button{
+        margin-left: 30px;
+        @media #{$large-mobile} {
+            margin-left: 0;
+            margin-top: 20px;
+        }
+        @media #{$lg-layout} {
+            margin-left: 14px;
+        }
+        @media #{$md-layout} {
+            margin-left: 0;
+            margin-top: 20px;
+        }
+        @media #{$sm-layout} {
+            margin-left: 0;
+            margin-top: 20px;
+        }
+
+    }
+}
+
+
+/*======================
+    Copyright Area 
+========================*/
+
+
+.copyright-default {
+    .quick-contact {
+        ul {
+            margin: 0 -15px;
+            li {
+                margin: 0 15px;
+                a {
+                    color: $body-color;
+                    @extend %fontWeight400;
+                    text-decoration: none;
+                    &:hover {
+                        color: $action-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+/* Safari 10.1+ */
+
+/* Safari 10.1+ (alternate method) */
+
+
+/* ----------------------------------------
+    Safari 10.1+ (alternate method) 
+-------------------------------------------*/
+
+@media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-appearance:none) {
+        .axil-service::before,
+        .axil-contact-form.contact-form-style-1::after,
+        .messonry-button button::before,
+        .messonry-button button::after,
+        .axil-counterup::before,
+        .axil-testimonial .inner::before,
+        .axil-blog .content .content-wrap::before,
+        #scrollUp::after,
+        .axil-blog-details-area .axil-comment-form .inner::before,
+        .axil-blog-details-area .axil-comment-form .inner::after,
+        .axil-service .inner .icon::before,
+        .axil-blog.active .content .content-wrap,
+        .breadcrumb-thumbnail-group .thumbnail::before,
+        .axil-breadcrumb-area.breadcrumb-style-2 .thumbnail .image-group,
+        .axil-address::after,
+        .axil-address::before ,
+        .axil-slide.slide-style-default .topskew-thumbnail-group .thumbnail::before ,
+        .topskew-thumbnail-group .thumbnail::before ,
+        .axil-service .inner::before,
+        .axil-service .inner::after,
+        .axil-blog.active .content .content-wrap::after {
+            transform: none;
+        }
+        .axil-counterup::after,
+        .axil-call-to-action.callaction-style-2 .inner::after,
+        .axil-working-process .thumbnail .image img,
+        .axil-pricing-table.active::before,
+        .axil-team-details-wrapper .thumbnail::before ,
+        .axil-breadcrumb-area.breadcrumb-style-2 .thumbnail .image-group {
+            transform: none;
+        }
+        .axil-team-area .thumbnail .total-team-button a::after {
+            transform: none;
+        }
+        .axil-testimonial .inner::after,
+        .axil-pricing-table.active .axil-pricing-inner::after,
+        .contact-form-style-2::after {
+            transform: none;
+        }
+        .axil-contact-form.contact-form-style-1::after,
+        .axil-address::before,
+        .axil-address::after {
+            transform-style: none;
+        }
+        .axil-case-study .thumbnail a img,
+        .axil-blog.active .content .content-wrap,
+        .axil-breadcrumb-area.breadcrumb-style-2 .thumbnail .image-group img.image-2,
+        .axil-breadcrumb-area.breadcrumb-style-2 .thumbnail .image-group img.image-1,
+        .axil-team-details-wrapper .thumbnail img {
+            transform: none !important;
+        }
+        .axil-service .inner::before {
+            width: calc(100% + -9px);
+        }
+        .axil-contact-form.contact-form-style-1::before,
+        .messonry-button button::before,
+        .axil-counterup::before ,
+        .axil-testimonial .inner::before,
+        .axil-testimonial .clint-info-wrapper .thumb::before,
+        .axil-pricing-table.active .axil-pricing-inner::before,
+        .axil-blog .content .content-wrap::before ,
+        #scrollUp::before ,
+        .contact-form-style-2::before ,
+        .axil-address::before {
+            display: none;
+        }
+        .axil-contact-form.contact-form-style-1::after,
+        .messonry-button button::after,
+        .axil-counterup::after,
+        .axil-testimonial .inner::after ,
+        .axil-testimonial .clint-info-wrapper .thumb ,
+        .axil-pricing-table.active .axil-pricing-inner::after ,
+        .axil-blog .content .content-wrap::after,
+        #scrollUp::after ,
+        .contact-form-style-2::after ,
+        .axil-address::after {
+            box-shadow: -15px 20px 40px 0 rgba(0, 2, 72, 0.1);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

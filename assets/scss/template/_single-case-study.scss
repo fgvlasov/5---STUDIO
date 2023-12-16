@@ -1,0 +1,120 @@
+/*--------------------------
+    Single Case Study  
+----------------------------*/
+
+
+.project-bief-styles {
+    position: relative;
+    z-index: 2;
+    .thumbnail {
+        margin-right: 65px;
+        @media #{$sm-layout} {
+            margin-top: 30px;
+            margin-right: 0;
+        }
+    }
+    .shape-group {
+        position: absolute;
+        z-index: -1;
+        @media #{$sm-layout} {
+            display: none;
+        }
+        @media #{$md-layout} {
+            display: none;
+        }
+        &.shape-01 {
+            right: -33%;
+            bottom: 11%;
+            img {
+                width: 257px;
+                height: 179px;
+            }
+        }
+        &.shape-02 {
+            right: -10%;
+            bottom: -16%;
+            z-index: -2;
+        }
+    }
+    &.order-style-2 {
+        .thumbnail {
+            margin-left: 0;
+            margin-right: 65px;
+            @media #{$sm-layout} {
+                margin-top: 30px;
+                margin-right: 0;
+            }
+        }
+        .shape-group {
+            &.shape-01 {
+                left: -32%;
+                right: auto;
+                bottom: 11%;
+                transform: rotate(197deg);
+            }
+            &.shape-02 {
+                left: -9%;
+                right: auto;
+                bottom: 0%;
+                transform: rotate(-97deg);
+            }
+        }
+    }
+}
+
+.axil-project-solutions-area{
+    &.shape-group-position {
+        position: relative;
+        .shape-group {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            @media #{$sm-layout} {
+                display: none;
+            }
+            @media #{$lg-layout} {
+                left: -41px;
+            }
+            @media #{$md-layout} {
+                display: none;
+            }
+        }
+    }
+}
+
+
+
+
+/*-------------------------
+    Axil Website Images  
+---------------------------*/
+.axil-website {
+    .thumbnail {
+        img {
+            @media #{$lg-layout} {
+                width: 100%;
+            }
+            @media #{$md-layout} {
+                width: 100%;
+            }
+            @media #{$sm-layout} {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

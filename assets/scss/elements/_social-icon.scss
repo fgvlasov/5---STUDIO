@@ -1,0 +1,307 @@
+/*===================
+    Social Icon 
+====================*/
+
+.ft-social-share {
+    margin: -5px -70px;
+    @media #{$lg-layout} {
+        margin: -5px -30px;
+    }
+    @media #{$md-layout} {
+        margin: -5px -30px;
+    }
+    @media #{$sm-layout} {
+        margin: -5px -10px;
+    }
+    
+    li {
+        margin: 5px 70px;
+        @media #{$lg-layout} {
+            margin: 5px 30px;
+        }
+        @media #{$md-layout} {
+            margin: 5px 30px;
+        }
+        @media #{$sm-layout} {
+            margin: 5px 10px;
+        }
+        a {
+            color: $mid-color;
+            font-size: 30px;
+            line-height: 28px;
+            @extend %transition;
+            @media #{$sm-layout} {
+                font-size: 25px;
+            }
+            @media #{$large-mobile} {
+                font-size: 19px;
+            }
+        }
+        &:hover {
+            a {
+                color: $action-color;
+            }
+        }
+    }
+}
+
+.axil-social-icons {
+    margin: 0 -15px;
+    li {
+        margin: 0 15px;
+         a {
+            color: $heading-color;
+            text-decoration: none;
+            font-size: 20px;
+            line-height: 28px;
+        }
+    }
+}
+
+
+
+
+/*------------------------
+    Social Share  
+-------------------------*/
+ul {
+    &.social-share {
+        @extend %liststyle;
+        display: flex;
+        justify-content: flex-end;
+        text-decoration: none;
+        margin: -10px;
+        flex-wrap: wrap;
+        @media #{$sm-layout} {
+            margin: -5px;
+        }
+        li {
+            margin: 10px;
+            @media #{$sm-layout} {
+                margin: 5px;
+            }
+            a {
+                text-decoration: none;
+                font-size: 15px;
+                line-height: 24px;
+                color: #757589;
+                @extend %transition;
+                i {
+                    font-size: 20px;
+                    line-height: 28px;
+                    color: #999AB8;
+                    font-weight: 400;
+                    @extend %transition;
+                }
+
+                &:hover {
+                    color: $primary-color;
+
+                    i {
+                        color: $primary-color;
+
+                    }
+                }
+            }
+        }
+        
+        // Style Two 
+        &.social-share-style-2 {
+            margin-right: 0;
+            li {
+                a {
+                    i {
+                        color: #999AB8;
+                        font-size: 20px;
+                        line-height: 28px;
+                        @extend %transition;
+                        @media #{$sm-layout} {
+                            font-size: 15px;
+                        }
+                    }
+                    span {
+                        color: #757589;
+                        font-size: 15px;
+                        line-height: 24px;
+                        display: inline-block;
+                        padding-left: 10px;
+                        @extend %transition;
+                        @media #{$sm-layout} {
+                            font-size: 14px;
+                            padding-left: 6px;
+                        }
+                    }
+                    &:hover {
+                        i {
+                            @extend %primary-color;
+                        }
+                        span {
+                            @extend %primary-color;
+                        }
+                    }
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        // Style Rounded 
+        &.style-rounded {
+            li {
+                a {
+                    width: 32px;
+                    display: block;
+                    height: 32px;
+                    line-height: 32px;
+                    border-radius: 100%;
+                    background: $heading-color;
+                    text-align: center;
+                    @extend %transition;
+                    i {
+                        color: #ffffff;
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+                    &:hover {
+                        background: $primary-color;
+                        i {
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+            
+            &.bg-color--white {
+                li {
+                    a {
+                        background: #ffffff;
+                        @extend %transition;
+                        i {
+                            color: #52526E;
+                        }
+                    }
+                    &:hover {
+                        a {
+                            background: $primary-color;
+                            i {
+                                color: #ffffff;
+                            }
+                        }
+                        
+                    }
+                }     
+            }
+        }
+    }
+}
+
+.axil-social-share {
+    img {
+        max-height: 70px;
+        @media #{$sm-layout} {
+            max-height: 48px;
+        }
+    }
+}
+
+/*--------------------------
+    List Of Followers  
+----------------------------*/
+
+ul {
+    &.followers-list {
+        @extend %liststyle;
+        margin: 0 -50px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 110px;
+        margin-bottom: -15px;
+
+        @media #{$lg-layout} {
+            margin: 0 -20px;
+            margin-bottom: -15px;
+            margin-top: 40px;
+        }
+        @media #{$md-layout} {
+            margin: 0 -15px;
+            margin-bottom: -15px;
+            margin-top: 40px;
+        }
+        @media #{$sm-layout} {
+            margin: 0 -10px;
+            margin-bottom: -15px;
+            margin-top: 30px;
+        }
+        li {
+            margin: 0 50px;
+            margin-bottom: 15px;
+            
+            @media #{$lg-layout} {
+                margin: 0 20px;
+                margin-bottom: 15px;
+            }
+
+            @media #{$md-layout} {
+                margin: 0 15px;
+                margin-bottom: 15px;
+            }
+
+            @media #{$sm-layout} {
+                margin: 0 10px;
+                margin-bottom: 15px;
+            }
+
+
+
+            a {
+                text-decoration: none;
+                i {
+                    height: 67px;
+                    width: 67px;
+                    background-color: #EA4C89;
+                    box-shadow: 0 10px 37px -5px rgba(234, 76, 137, 0.5);
+                    line-height: 67px;
+                    text-align: center;
+                    color: $white-color;
+                    border-radius: 100%;
+                    margin-right: 25px;
+                    @media #{$md-layout} {
+                        margin-right: 13px;
+                    }
+                }
+                span {
+                    color: $heading-color;
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 26px;
+                    @extend %transition;
+                }
+                &:hover {
+                    span {
+                        color: $primary-color;
+                    }
+                }
+            }
+            &.behance {
+                a {
+                    i {
+                        background-color: #0067FF;
+                        box-shadow: 0 10px 37px -5px rgba(0, 103, 255, 0.5);
+                    }
+                }
+            }
+            &.linkedin {
+                a {
+                    i {
+                        background-color: #0177AC;
+                        box-shadow: 0 10px 37px -5px rgba(1, 119, 172, 0.5);
+                    }
+                }
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,245 @@
+/*----------------------------
+    Axil Call To Action 
+------------------------------*/
+.axil-call-to-action {
+    h2{
+        &.title{
+            margin-bottom: 40px;
+            @media #{$lg-layout} {
+                margin-bottom: 20px;
+            }
+            @media #{$md-layout} {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    a {
+        &.axil-button{
+            margin-bottom: 30px;
+        }
+    }
+    .callto-action {
+        > span {
+            color: $heading-color;
+            font-size: 22px;
+            line-height: 26px;
+            font-weight: 700;
+            display: inline-block;
+            @media #{$sm-layout} {
+                font-size: 15px;
+            }
+            a {
+                text-decoration: none;
+                @extend %transition;
+            }
+            &.text {
+               font-size: 15px;
+               line-height: 24px;
+               color: $body-color;
+               padding-right: 21px;
+               font-weight: 400 !important;
+            }
+            i{  
+                padding-right: 14px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+.axil-call-to-action-area {
+    &.shape-position {
+        position: relative;
+        overflow: hidden;
+        .shape-group {
+            .shape {
+                position: absolute;
+                &.shape-01 {
+                    bottom: -163px;
+                    left: 300px;
+                    @media #{$sm-layout} {
+                        display: none;
+                    }
+                    @media #{$md-layout} {
+                        left: -3%;
+                    }
+                }
+                &.shape-02 {
+                    bottom: 80px;
+                    right: 0;
+                    @media #{$sm-layout} {
+                        display: none;
+                    }
+                }
+                
+                &.shape-03 {
+                    top: 0;
+                    left: 440px;
+                    @media #{$sm-layout} {
+                        display: none;
+                    }
+                    @media #{$md-layout} {
+                        left: 73%;
+                    }
+    
+                }
+                &.shape-04 {
+                    top: 0;
+                    right: 300px;
+                    .icon {
+                        &::before {
+                            font-size: 108px;
+                        }
+                    }
+                    @media #{$sm-layout} {
+                        display: none;
+                    }
+                    @media #{$md-layout} {
+                        right: 66%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*----------------------------------
+    Call To Action Style Two 
+-----------------------------------*/
+.axil-call-to-action{
+    &.callaction-style-2 {
+        position: relative;
+        z-index: 2;
+        .inner{
+            display: flex;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            margin-left: -67px;
+            justify-content: space-between;
+            padding: 80px 80px 80px 140px;
+
+            @media #{$lg-layout} {
+                padding: 40px 40px 40px 40px;
+                margin-left: 0;
+            }
+            @media #{$sm-layout} {
+                padding: 30px 30px;
+                margin-left: 0;
+                display: block;
+            }
+            @media #{$md-layout} {
+                padding: 30px 30px;
+                margin-left: 0;
+                display: block;
+            }
+            &::after{
+                background: linear-gradient(180deg, #FEF7E2 0%, #EEEEFD 100%);
+                position: absolute;
+                content: "";
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                -webkit-transform: perspective(500px) rotateY(-5deg);
+                transform: perspective(500px) rotateY(-5deg);
+                box-shadow: 0 0 1px transparent;
+                
+                @media #{$sm-layout} {
+                    transform: perspective(0) rotateY(0);
+                }
+                @media #{$md-layout} {
+                    transform: perspective(0) rotateY(0);
+                }
+                @media #{$lg-layout} {
+                    transform: perspective(0) rotateY(0);
+                }
+            }
+            h2 {
+                &.title{
+                    margin-bottom: 0;
+                    @media #{$lg-layout} {
+                        font-size: 34px;
+                    }
+                    @media #{$sm-layout} {
+                        margin-bottom: 17px;
+                    }
+                    @media #{$md-layout} {
+                        margin-bottom: 17px;
+                        font-size: 39px;
+                    }
+                }
+            }
+            a {
+                &.axil-button {
+                    margin-bottom: 0;
+                    @media #{$md-layout} {
+                        margin-bottom: 0;
+                    }
+                    @media #{$sm-layout} {
+                        margin-bottom: 0;
+                    }
+                }
+                
+            }
+        }
+
+        &.variation--2 {
+            margin-bottom: -110px;
+            position: relative;
+            .inner {
+                &::after {
+                    background: linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
+                }
+                h2 {
+                    &.title {
+                        font-size: 42px;
+                        line-height: 60px;
+                        margin-bottom: 15px;
+
+                        @media #{$lg-layout} {
+                            font-size: 37px;
+                            line-height: 47px;
+                            margin-bottom: 8px;
+                        }
+                        @media #{$md-layout} {
+                            font-size: 32px;
+                            line-height: 46px;
+                            margin-bottom: 5px;
+                        }   
+                        @media #{$sm-layout} {
+                            font-size: 32px;
+                            line-height: 46px;
+                            margin-bottom: 5px;
+                        } 
+                        @media #{$large-mobile} {
+                            font-size: 28px;
+                            line-height: 40px;
+                        }
+                    }
+                }
+                p {
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 35px;
+                    color: #75758B;
+                    a {
+                       color: #00CFFF; 
+                    }
+                } 
+                
+                .button-wrapper {
+                    @media #{$md-layout} {
+                        margin-top: 20px;
+                    }
+                    @media #{$sm-layout} {
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+

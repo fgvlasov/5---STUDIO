@@ -1,0 +1,76 @@
+/*=================
+Header Styles 
+===================*/
+
+.haeder-default {
+    transition: all 0.4s;
+    padding: 15px 0;
+    &.header-transparent {
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: auto;
+        z-index: 9;
+        padding: 40px 0 0;
+        @media #{$md-layout} {
+            padding: 20px 0 0;
+        }
+        @media #{$sm-layout} {
+            padding: 20px 0 0;
+        }
+    }
+    &.sticky {
+        position: fixed !important;
+        top: 0;
+        background: rgba(255, 255, 255, 1);
+        background-color: rgba(255, 255, 255, 1);
+        padding: 0;
+        left: 0;
+        right: 0;
+        z-index: 9;
+        box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
+        animation: headerSlideDown .95s ease forwards;
+        .header-wrapper {
+            padding: 5px 0;
+        }
+    }
+    .logo {
+        a {
+            text-decoration: none;
+            svg {
+                width: 100%;
+            }
+        }
+    }
+    .mainmenu-wrapepr {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .container ,
+    .header-right {
+        position: static;
+    }
+}
+
+/*----------------------
+    Logo Animation  
+-----------------------*/
+circle#icon-oval-sm,
+circle#icon-oval-lg,
+circle.icon-oval-sm,
+circle.icon-oval-lg {
+    transition: all 0.3s;
+}
+
+#logo:hover circle#icon-oval-sm ,
+.logo:hover circle.icon-oval-sm {
+    transform: perspective(10px) translate3d(12.5px, -7.5px, 0) scale(0.8)
+}
+#logo:hover circle#icon-oval-lg ,
+.logo:hover circle.icon-oval-lg {
+    transform: translate3d(-4px, 0, 10px) scale(1.3);
+}
+a {
+    transition: 0.3s;
+}

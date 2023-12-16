@@ -1,0 +1,166 @@
+/*----------------------
+    Error Styles  
+------------------------*/
+.axil-error-not-found {
+  position: relative;
+  z-index: 1;
+}
+
+.axil-error-not-found {
+  position: relative;
+
+  &.fullscreen {
+
+    @media #{$lg-layout} {
+      min-height: auto;
+      width: 100%;
+      padding: 150px 0;
+    }
+
+    @media #{$md-layout} {
+      min-height: auto;
+      width: 100%;
+      padding: 150px 0;
+    }
+
+    @media #{$sm-layout} {
+      min-height: auto;
+      width: 100%;
+      padding: 150px 0;
+    }
+
+  }
+
+  .axil-error {
+    @media #{$lg-layout} {
+      padding-top: 70px;
+    }
+    @media #{$md-layout} {
+      padding-top: 70px;
+    }
+    @media #{$sm-layout} {
+      padding-top: 70px;
+    }
+  }
+
+  .shape-group {
+    .shape {
+      position: absolute;
+      z-index: 2;
+
+      > span {
+        display: block !important;
+      }
+
+      &.shape-01 {
+        bottom: 19%;
+        left: 37%;
+      }
+
+      &.shape-02 {
+        bottom: 100px;
+        right: 11%;
+      }
+
+      &.shape-03 {
+        bottom: auto;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        @media #{$laptop-device} {
+          width: 100%;
+        }
+        @media #{$lg-layout} {
+          width: 100%;
+        }
+        @media #{$md-layout} {
+          width: 100%;
+        }
+        @media #{$sm-layout} {
+          width: 100%;
+        }
+
+        img {
+          @media #{$laptop-device} {
+            width: 100%;
+          }
+          @media #{$lg-layout} {
+            width: 100%;
+          }
+          @media #{$md-layout} {
+            width: 100%;
+          }
+          @media #{$sm-layout} {
+            width: 100%;
+          }
+
+        }
+      }
+
+      &.shape-04 {
+        bottom: auto;
+        left: 0;
+        @media #{$laptop-device} {
+          bottom: 0;
+          left: 0;
+          max-width: 27%;
+        }
+        @media #{$lg-layout} {
+          bottom: 0;
+          left: 0;
+          max-width: 27%;
+        }
+        @media #{$md-layout} {
+          bottom: 0;
+          left: 0;
+          max-width: 27%;
+        }
+        @media #{$sm-layout} {
+          display: none;
+        }
+
+        img {
+          @media #{$laptop-device} {
+            width: 100%;
+          }
+          @media #{$lg-layout} {
+            width: 100%;
+          }
+          @media #{$md-layout} {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.axil-error {
+  position: relative;
+  z-index: 2;
+
+  .text-image {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    z-index: -1 !important;
+
+    > span {
+      width: 860px !important;
+      display: block !important;
+
+      @media #{$lg-layout} {
+        width: 415px !important;
+      }
+      @media #{$md-layout} {
+        width: 415px !important;
+      }
+      @media #{$sm-layout} {
+        width: auto !important;
+        max-width: 217px !important;
+      }
+    }
+  }
+}
+

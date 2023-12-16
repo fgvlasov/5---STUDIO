@@ -1,0 +1,229 @@
+/*--------------------------
+    Blog Sidebar Styles 
+----------------------------*/
+.axil-single-widget { 
+    .title {
+        font-size: 22px;
+        line-height: 26px;
+        font-weight: 700;
+    }
+
+    // Blog Search 
+    &.search {
+        .blog-search {
+            position: relative;
+            input {
+                height: 46px;
+                border: 1px solid $border-color;
+                padding: 0 20px;
+                clear: $heading-color;
+                padding-right: 52px;
+                font-size: 15px;
+            }
+            .search-button {
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+                border: 0 none;
+                padding: 0;
+                i {
+                    color: $heading-color;
+                    font-weight: 400;
+                }
+                &::before {
+                    position: absolute;
+                    background: #C7C7D6;
+                    height: 18px;
+                    width: 1px;
+                    content: "";
+                    left: -14px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+        
+    }
+    // Category 
+    &.category {
+        ul {
+            &.category-list {
+                @extend %liststyle;
+                li{
+                    a {
+                        display: block;
+                        padding: 10px 0;
+                        padding-right: 20px;
+                        font-size: 18px;
+                        line-height: 28px;
+                        border-bottom: 1px solid $border-color;
+                        text-decoration: none;
+                        color: $body-color;
+                        transition: 0.3s;
+                        position: relative;
+                        &::after {
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 4.5px 0 4.5px 6px;
+                            border-color: transparent transparent transparent $heading-color;
+                            position: absolute;
+                            right: 0;
+                            content: "";
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                    }
+                    &:hover {
+                        a{
+                            color: $action-color;
+                        }
+                    }
+                    &:first-child{
+                        a {
+                            padding-top: 0;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+    &.share {
+        background: #7A19FF;
+        padding: 17px 20px;
+        span {
+            font-size: 22px;
+            line-height: 26px;
+            font-weight: 700;
+            color: #ffffff;
+            display: inline-block;
+        }
+        ul {
+            &.social-list {
+                @extend %liststyle;
+                li {
+                    margin-left: 20px;
+                    @media #{$lg-layout} {
+                        margin-left: 10px;
+                    }
+                    @media #{$md-layout} {
+                        margin-left: 10px;
+                    }
+                    @media #{$sm-layout} {
+                        margin-left: 10px;
+                    }
+                    a {
+                        font-size: 16px;
+                        line-height: 28px;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+    // Small post WWrapper 
+    &.small-post-wrapper {
+        margin-top: -20px;
+        .small-post {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            .thumbnail {
+                padding-right: 20px;
+                img {
+                    max-height: 80px;
+                    max-width: 100px;
+                    object-fit: cover;
+                }
+            }
+            .content {
+                h6 {
+                    margin-bottom: 10px;
+                    a {
+                        text-decoration: none;
+                        @extend %transition;
+                    }
+                }
+                ul {
+                    &.blog-meta {
+                        @extend %liststyle;
+                        margin: 0 -10px;
+                        display: flex;
+                        li {
+                            color: $body-color;
+                            font-size: 12px;
+                            line-height: 24px;
+                            position: relative;
+                            margin: 0 10px;
+                            & + li {
+                                &::before {
+                                    position: absolute;
+                                    background: $border-color;
+                                    height: 14px;
+                                    width: 1px;
+                                    left: -10px;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    content: "";
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.tags {
+        ul {
+            &.tags-list {
+                @extend %liststyle;
+                margin: 0 -5px;
+                margin-bottom: -10px;
+                li {
+                    margin: 0 5px;
+                    margin-bottom: 10px;
+                    display: inline-block;
+                    a {
+                        background: #F6F5FA;
+                        display: inline-block;
+                        height: 26px;
+                        line-height: 26px;
+                        color: #757589;
+                        font-size: 15px;
+                        line-height: 24px;
+                        padding: 0 10px;
+                        text-decoration: none;
+                        @extend %transition;
+                        &:hover {
+                            background: $primary-color;
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,110 @@
+/*=====================
+Navigation Styles 
+=======================*/
+ul {
+    &.mainmenu {
+        display: flex;
+        align-items: center;
+        @extend %liststyle;
+        margin: 0 -20px;
+        @media #{$laptop-device} {
+            margin: 0 -16px;
+        }
+        @media #{$lg-layout} {
+            margin: 0 -15px;
+        }
+        > li {
+            > a {
+                display: block;
+                padding: 24px 20px;
+                @media #{$laptop-device} {
+                    padding: 24px 16px;
+                }
+                @media #{$lg-layout} {
+                    padding: 24px 15px;
+                }
+            }
+            &:hover {
+                > a {
+                    color: $primary-color;
+                }
+            }
+        }
+        li {
+            margin: 0;
+            position: relative;
+            a {
+                @extend %heading-color;
+                font-size: 16px;
+                line-height: 22px;
+                @extend %fontWeight700;
+                text-decoration: none;
+                @extend %transition;
+            }
+            &.has-dropdown {
+                ul {
+                    &.axil-submenu {
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        min-width: 250px;
+                        background: #ffffff;
+                        padding: 20px 0;
+                        list-style: none;
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: 0.4s;
+                        z-index: -2;
+                        border-radius: 6px;
+                        transform: translateX(0) translateY(40px);
+                        transition: 0.5s;
+                        box-shadow: 0 13px 18px -8px rgba(0, 0, 0, 0.15), 0 29px 45px 4px rgba(0, 0, 0, 0.08), 0 11px 55px 10px rgba(0, 0, 0, 0.07);
+
+                        li {
+                            margin: 0 20px;
+                            a {
+                                font-size: 15px;
+                                line-height: 31px;
+                                display: block;
+                                @extend %transition;
+                                &:hover {
+                                    color: $primary-color;
+                                }
+                            }
+                        }
+                    }
+                }
+                &:hover {
+                    > a {
+                        color: $primary-color;
+                    }
+                    ul {
+                        &.axil-submenu {
+                            opacity: 1;
+                            visibility: visible;
+                            z-index: 9999;
+                            transform: translateX(0) translateY(0);
+                        }
+                    }
+                }
+
+                &.active {
+                    ul {
+                        &.axil-submenu {
+                            &.visible {
+                                opacity: 1;
+                                visibility: visible;
+                                transform: scale(1);
+                            }
+                        }
+                    }
+                }
+            }
+           
+
+        }
+    }
+}
+.logo a {
+    text-decoration: none;
+}

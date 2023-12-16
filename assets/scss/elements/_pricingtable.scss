@@ -1,0 +1,303 @@
+/*--------------------------
+    Pricing Table Styles 
+----------------------------*/
+
+.axil-pricing-table-area {
+  &.pricing-shape-position {
+    position: relative;
+    z-index: 1;
+    .shape-group {
+      position: absolute;
+      left: 0;
+      bottom: 270px;
+      z-index: -1;
+      @media #{$sm-layout} {
+        display: none;
+      }
+    }
+  }
+}
+
+/*--------------------------------
+    Start Pricing Table Style  
+----------------------------------*/
+.axil-pricing-table {
+  position: relative;
+  z-index: 2;
+  .axil-pricing-inner {
+    padding: 40px;
+    background: $white-color;
+    margin: 0 auto;
+    position: relative;
+    @media #{$lg-layout} {
+      padding: 40px 20px;
+    }
+    @media #{$md-layout} {
+      padding: 30px 20px;
+    }
+    @media #{$sm-layout} {
+      padding: 25px 15px;
+    }
+  }
+  .pricing-header {
+    border-bottom: 1px solid #c7c7d5;
+    padding-bottom: 10px;
+
+    h4 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 24px;
+      margin-bottom: 30px;
+      @media #{$md-layout} {
+        margin-bottom: 15px;
+      }
+      @media #{$sm-layout} {
+        margin-bottom: 15px;
+      }
+    }
+    .price-wrapper {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      align-items: flex-end;
+      @media #{$md-layout} {
+        margin-bottom: 16px;
+      }
+      @media #{$sm-layout} {
+        margin-bottom: 16px;
+      }
+      .price {
+        display: flex;
+        align-items: flex-end;
+        h2 {
+          color: #00d09c;
+          font-size: 50px;
+          line-height: 41px;
+          font-weight: 700;
+          margin-bottom: 0;
+          @media #{$md-layout} {
+            font-size: 35px;
+          }
+          @media #{$sm-layout} {
+            font-size: 35px;
+          }
+        }
+        span {
+          color: #757589;
+          font-size: 15px;
+          line-height: 24px;
+        }
+      }
+      .date-option {
+        select {
+          color: #757589;
+          font-size: 15px;
+          line-height: 24px;
+          border: 0 none;
+          border-bottom: 1px solid $border-color;
+          padding: 0;
+          margin: 0;
+          height: auto;
+        }
+      }
+    }
+    .pricing-get-button {
+      margin-bottom: 20px;
+      @media #{$md-layout} {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      a {
+        &.axil-button {
+          width: 100%;
+          text-align: center;
+          @media #{$md-layout} {
+            width: auto;
+            margin: 0 auto;
+            padding: 0 13px;
+          }
+        }
+      }
+    }
+    span {
+      &.subtitle {
+        font-size: 15px;
+        line-height: 24px;
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+
+  .pricing-body {
+    margin-top: 20px;
+    .inner {
+      ul {
+        &.list-style {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          li {
+            color: #737387;
+            font-size: 20px;
+            line-height: 50px;
+            position: relative;
+            padding-left: 35px;
+
+            @media #{$lg-layout} {
+              font-size: 14px;
+              line-height: 34px;
+            }
+
+            @media #{$md-layout} {
+              font-size: 14px;
+              line-height: 39px;
+            }
+
+            @media #{$sm-layout} {
+              font-size: 14px;
+              line-height: 40px;
+            }
+            &::before {
+              position: absolute;
+              color: #00d09c;
+              font-family: "Font Awesome 5 Pro";
+              font-size: 18px;
+              line-height: 18px;
+              content: "\f00c";
+              font-weight: 400;
+              left: 0;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+          }
+        }
+      }
+    }
+  }
+  &.active {
+    background: transparent;
+    padding-left: 48px;
+    @media #{$sm-layout} {
+      padding-left: 10px;
+    }
+    .axil-pricing-inner {
+      position: relative;
+      z-index: 2;
+      background: transparent;
+      &::before {
+        width: 92%;
+        height: 92%;
+        left: -20px;
+        bottom: -20px;
+        background: rgba(0, 2, 72, 0.1);
+        content: "";
+        position: absolute;
+        z-index: -1;
+        transform-style: preserve-3d;
+        filter: blur(50px);
+        transform: perspective(500px) rotateY(-5deg);
+        @media #{$sm-layout} {
+          display: none;
+        }
+      }
+      &::after {
+        background: #ffffff;
+        position: absolute;
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        transform: perspective(700px) rotateY(-2deg);
+        @media #{$sm-layout} {
+          transform: perspective(0px) rotateY(0deg);
+        }
+      }
+    }
+    &::before {
+      transform: perspective(500px) rotateY(-1deg);
+      position: absolute;
+      width: calc(100% + -61px);
+      height: calc(100% + -15px);
+      top: calc(25px + 11px);
+      content: "";
+      border: 4px solid #000345;
+      z-index: -1;
+      right: calc(25px - -11px);
+      box-shadow: 0 0 1px transparent;
+      @media #{$sm-layout} {
+        width: calc(100% + -35px);
+        height: calc(100% + -19px);
+        top: calc(25px + 7px);
+        right: calc(25px - -10px);
+      }
+      @media #{$large-mobile} {
+        display: none;
+      }
+    }
+
+    a {
+      &.axil-button {
+        color: #ffffff;
+        &::before {
+          border: 2px solid #702fff;
+        }
+        &::after {
+          background-color: #702fff;
+          opacity: 1;
+          -webkit-transform: scale(1, 1);
+          -ms-transform: scale(1, 1);
+          transform: scale(1, 1);
+        }
+        span {
+          &.button-icon {
+            border-color: transparent transparent transparent #ffffff;
+          }
+        }
+        &:hover {
+          &::before {
+            -webkit-transform: scale(1, 1);
+            -ms-transform: scale(1, 1);
+            transform: scale(1, 1);
+          }
+        }
+      }
+    }
+  }
+  &.prcing-style-2 {
+    .axil-pricing-inner {
+      padding: 40px 35px;
+    }
+    &.active {
+      padding-left: 0;
+      &::before {
+        width: calc(100% + -20px);
+        height: calc(100% + -18px);
+      }
+      .axil-pricing-inner {
+      }
+    }
+  }
+}
+
+.axil-pricing-table .pricing-header .price-wrapper .date-option select {
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+}
+.axil-pricing-table .pricing-header .price-wrapper .date-option select {
+  overflow: hidden;
+  overflow: -moz-hidden-unscrollable;
+  background: url(/images/icons/arrow-icon.png) no-repeat right white;
+  display: inline-block;
+  position: relative;
+  padding-right: 12px;
+  background-color: transparent;
+}

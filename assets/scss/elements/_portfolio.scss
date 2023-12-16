@@ -1,0 +1,184 @@
+/*=======================
+    Portfolio Styles 
+=========================*/
+
+/*-------------------------
+Masonary Grid List 
+----------------------------*/
+.mesonry-list {
+  margin: 0 -22px;
+
+  &.grid-metro3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media #{$md-layout} {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media #{$sm-layout} {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media #{$large-mobile} {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .portfolio {
+      padding: 0 22px;
+    }
+  }
+}
+
+/*-----------------------------
+    Portfolio Item  
+------------------------------*/
+.portfolio {
+  margin-top: 60px;
+  @media #{$sm-layout} {
+    margin-top: 30px;
+  }
+
+  .inner {
+    .thumb {
+      display: inline-block;
+      position: relative;
+      z-index: 3;
+      transition: 0.5s;
+      @media #{$sm-layout} {
+        display: block;
+        transform: perspective(0) rotateY(0deg);
+      }
+      &::before {
+        position: absolute;
+        width: calc(100% - -2px);
+        height: calc(100% + -15px);
+        top: calc(25px + 10px);
+        content: "";
+        border: 4px solid #000345;
+        z-index: -1;
+        right: calc(25px - 5px);
+        box-shadow: 0 5px 35px rgba(0, 2, 72, 0.1);
+        opacity: 0;
+        transition: all 0.5s;
+        @media #{$sm-layout} {
+          display: none;
+        }
+      }
+      a {
+        display: block;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .port-overlay-info {
+      padding-top: 30px;
+      @media #{$sm-layout} {
+        padding-top: 20px;
+      }
+      .hover-action {
+        h4 {
+          &.title {
+            margin-bottom: 10px;
+            @media #{$sm-layout} {
+              margin-bottom: 0px;
+            }
+            a {
+              text-decoration: none;
+            }
+          }
+        }
+        span {
+          &.category {
+            font-size: 20px;
+            line-height: 32px;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  &.active {
+    .inner {
+      .thumb {
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+/*----------------------------------
+    Portfolio Button Styles 
+-----------------------------------*/
+.messonry-button {
+  button {
+    border: 0 none;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: #000248;
+    position: relative;
+    height: 100px;
+    z-index: 2;
+    -webkit-perspective: 100px;
+    perspective: 100px;
+    padding: 0 35px;
+    @media #{$sm-layout} {
+      font-size: 14px;
+      height: 53px;
+      padding: 0 14px;
+    }
+
+    &::after {
+      background: #ffffff;
+      position: absolute;
+      content: "";
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      -webkit-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+      transform: rotateY(-10deg);
+      opacity: 0;
+    }
+    &::before {
+      width: 92%;
+      height: 92%;
+      left: -20px;
+      bottom: -20px;
+      background: rgba(0, 2, 72, 0.1);
+      content: "";
+      position: absolute;
+      z-index: -1;
+      transform-style: preserve-3d;
+      transform: rotateY(-10deg);
+      filter: blur(50px);
+      opacity: 0;
+      transition: 0.3s;
+      visibility: hidden;
+      @media #{$sm-layout} {
+        display: none;
+      }
+    }
+    &.is-checked {
+      color: $primary-color;
+      &::after {
+        opacity: 1;
+      }
+      &::before {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
