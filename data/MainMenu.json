@@ -2,8 +2,8 @@
   {
     "id": 1,
     "title": "Home",
-    "url": "#",
-    "hasChildren": true,
+    "url": "/",
+    "hasChildren": false,
     "clildrens": [
       { "id": 1, "title": "Digital Agency", "url": "/home-01" },
       { "id": 2, "title": "Creative Agency", "url": "/home-02" },
@@ -15,8 +15,8 @@
   {
     "id": 2,
     "title": "Services",
-    "url": "#",
-    "hasChildren": true,
+    "url": "/services",
+    "hasChildren": false,
     "clildrens": [
       { "id": 1, "title": "Services", "url": "/services" },
       { "id": 2, "title": "Services Two", "url": "/service-two" },
@@ -36,8 +36,8 @@
   {
     "id": 4,
     "title": "Blog",
-    "url": "#",
-    "hasChildren": true,
+    "url": "/blog",
+    "hasChildren": false,
     "clildrens": [
       { "id": 1, "title": "Blog List", "url": "/blog" },
       { "id": 2, "title": "Blog List Two", "url": "/blog-list-two" },
