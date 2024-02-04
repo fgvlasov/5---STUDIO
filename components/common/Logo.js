@@ -2,7 +2,7 @@ const Logo = ({variant = 'one', fillTextColor = '#00004B'}) => {
     return (
         <svg width="281px" height="60px" viewBox="0 0 281 60" version="1.1">
             <title>Logo</title>
-            <desc>Created with Sketch.</desc>
+            <desc>Created by Ted</desc>
             <g id="Symbols"
                stroke="none"
                strokeWidth="1"
@@ -16,7 +16,7 @@ const Logo = ({variant = 'one', fillTextColor = '#00004B'}) => {
                                   fontSize="20"
                                   fontWeight="bold"
                                   fill={fillTextColor}>
-                                <tspan x="75" y="24">Keystroke</tspan>
+                                <tspan x="75" y="24">New-apps.team</tspan>
                                 <tspan
                                     x="175.14" y="24.5001221"
                                     fontFamily="DMSans-Regular, DM Sans"
@@ -27,7 +27,7 @@ const Logo = ({variant = 'one', fillTextColor = '#00004B'}) => {
                                     fontFamily="DMSans-Regular, DM Sans"
                                     fontSize="18"
                                     fontWeight="normal">
-                                    {variant === 'two' ? 'Small agency studio' : 'Startup template'}
+                                    {variant === 'two' ? 'Develop software' : 'Develop software'}
                                 </tspan>
                             </text>
                             <g id="Favicon">

@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import ContactFormOne from '../forms/ContactFormOne';
 
-const BannerFive = () => {
+const BannerFive = ({contacts}) => {
+	console.log(contacts)
     return (
         <div className="axil-slider-area axil-slide-activation position-relative">
             <div className="axil-slide slide-style-5 theme-gradient-8 d-flex align-items-center">
@@ -37,7 +38,7 @@ const BannerFive = () => {
                         <div className="callto-action-wrapper text-center">
                             <span className="text">Or call us now</span>
                             <span>
-                               <i className="fal fa-phone-alt"/> <a href="#">(123) 456 7890</a>
+								<i className="fal fa-phone-alt"/> <a href={`mailto:${contacts.PhoneLink}`}>{contacts.Phone}</a>
                             </span>
                         </div>
                     </div>
