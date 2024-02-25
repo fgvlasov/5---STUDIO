@@ -6,6 +6,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
 import AuthorData from '../../data/Authors.json';
 import VideoPlayer from '../../components/common/VideoPlayer';
+import { getStrapiMedia } from 'helpers/media';
 
 let settings = {
     dots: true,
@@ -19,17 +20,8 @@ let settings = {
 const BlogPost = ({post, postType = 'default'}) => {
     const [isWindow, setIsWindow] = useState(false);
     const [author, setAuthor] = useState({});
-
-    useEffect(() => {
-        const getAuthor = () => {
-            const blogAuthor = AuthorData.find((author) => {
-                return author.id === post.postdata.authorId;
-            });
-            setAuthor(blogAuthor);
-        };
-        getAuthor();
-        setIsWindow(true);
-    }, [post, setAuthor, setIsWindow]);
+	
+	console.log(post);
 
     return (
         <>
@@ -37,36 +29,17 @@ const BlogPost = ({post, postType = 'default'}) => {
                 <div className="axil-blog-list">
                     <div className="blog-top">
                         <h3 className="title">
-                            <Link href={`/blog/${post.slug}`}>{post.postdata.title}</Link>
+                            <Link href={`/blog/${post.attributes.slug}`}>{post.attributes.title}</Link>
                         </h3>
-                        <div className="author">
-                            <div className="author-thumb">
-                                {author.avatar && (
-                                    <Image
-                                        width={50}
-                                        height={50}
-                                        src={author.avatar}
-                                        alt="Blog Author"
-                                    />
-                                )}
-                            </div>
-                            <div className="info">
-                                <h6>{author.name}</h6>
-                                <ul className="blog-meta">
-                                    <li>{post.postdata.publishedAt}</li>
-                                    <li>{post.postdata.readingTime}</li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
                     <div className="thumbnail">
-                        <Link href={`/blog/${post.slug}`}>
+                        <Link href={`/blog/${post.attributes.slug}`}>
                             <a>
                                 <Image
                                     width={850}
                                     height={450}
                                     className="w-100"
-                                    src={post.postdata.thumbnail.large}
+                                    src={getStrapiMedia(post.attributes.image)}
                                     alt="Blog Images"
                                     priority={true}
                                 />
@@ -74,8 +47,8 @@ const BlogPost = ({post, postType = 'default'}) => {
                         </Link>
                     </div>
                     <div className="content">
-                        <p>{post.postdata.excerpt}</p>
-                        <Link href={`/blog/${post.slug}`}>
+                        <p>{post.attributes.excerpt}</p>
+                        <Link href={`/blog/${post.attributes.slug}`}>
                             <a className="axil-button btn-large btn-transparent">
                                 <span className="button-text">Read More</span>
                                 <span className="button-icon"/>
@@ -85,31 +58,12 @@ const BlogPost = ({post, postType = 'default'}) => {
                 </div>
             )}
 
-            {postType === "gallery" && (
+            {/* {postType === "gallery" && (
                 <div className="axil-blog-list gallery-post">
                     <div className="blog-top">
                         <h3 className="title">
-                            <Link href={`/blog/${post.slug}`}>{post.postdata.title}</Link>
+                            <Link href={`/blog/${post.attributes.slug}`}>{post.postdata.attributes.title}</Link>
                         </h3>
-                        <div className="author">
-                            <div className="author-thumb">
-                                {author.avatar && (
-                                    <Image
-                                        width={50}
-                                        height={50}
-                                        src={author.avatar}
-                                        alt="Blog Author"
-                                    />
-                                )}
-                            </div>
-                            <div className="info">
-                                <h6>{author.name}</h6>
-                                <ul className="blog-meta">
-                                    <li>{post.postdata.publishedAt}</li>
-                                    <li>{post.postdata.readingTime}</li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
 
                     <div
@@ -140,7 +94,7 @@ const BlogPost = ({post, postType = 'default'}) => {
 
                     <div className="content">
                         <p>{post.postdata.excerpt}</p>
-                        <Link href={`/blog/${post.slug}`}>
+                        <Link href={`/blog/${post.attributes.slug}`}>
                             <a className="axil-button btn-large btn-transparent">
                                 <span className="button-text">Read More</span>
                                 <span className="button-icon"></span>
@@ -154,7 +108,7 @@ const BlogPost = ({post, postType = 'default'}) => {
                 <div className="axil-blog-list sticky-blog">
                     <div className="blog-top">
                         <h3 className="title">
-                            <Link href={`/blog/${post.slug}`}>{post.postdata.title}</Link>
+                            <Link href={`/blog/${post.attributes.slug}`}>{post.attributes.title}</Link>
                         </h3>
                         <div className="info">
                             <div className="info d-flex align-items-center">
@@ -184,7 +138,7 @@ const BlogPost = ({post, postType = 'default'}) => {
                     <div className="blog-top">
                         <blockquote>
                             <h3 className="title">
-                                <Link href={`/blog/${post.slug}`}>{post.postdata.title}</Link>
+                                <Link href={`/blog/${post.attributes.slug}`}>{post.attributes.title}</Link>
                             </h3>
                         </blockquote>
                         <div className="author">
@@ -270,7 +224,7 @@ const BlogPost = ({post, postType = 'default'}) => {
                         </Link>
                     </div>
                 </div>
-            )}
+            )} */}
 
             {(isWindow && post.postdata.videoUrl) && (
                 <VideoPlayer url={post.postdata.videoUrl}/>

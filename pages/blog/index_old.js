@@ -1,19 +1,25 @@
+import fs from "fs";
+import matter from "gray-matter";
 import Head from "next/head";
-
+import path from "path";
 import {useEffect, useState} from "react";
 import BlogPost from "../../components/blogs/BlogPost";
+import BlogSidebar from "../../components/blogs/BlogSidebar";
 import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
 import CallToActionOne from "../../components/call-to-actions/CallToActionOne";
 import Layout from "../../components/layouts/Layout";
 import Pagination from "../../components/pagination/Pagination";
+import {getCategories, getTags} from "../../helpers/utilities";
 
-import { fetchAPI } from 'helpers/api';
-
-const Blog = ({posts, blogArticles}) => {
+const Blog = ({posts}) => {
+    const [blogs, setBlogs] = useState([]);
     const [page, setPage] = useState(1);
     const [totalPages, setTotalPages] = useState(0);
 
 
+
+    const startIndex = (page - 1) * 4;
+    const selectedBlogs = blogs.slice(startIndex, startIndex + 4);
 
     const handleClick = (num) => {
         setPage(num);
@@ -23,7 +29,22 @@ const Blog = ({posts, blogArticles}) => {
         });
     };
 
+    useEffect(() => {
+        const getBlogs = () => {
+            const blogs = posts.filter((post) => {
+                return (
+                    post.postdata.type !== "sticky" &&
+                    post.postdata.type !== "quote" &&
+                    post.postdata.type !== "gallery" &&
+                    post.postdata.type !== "video"
+                );
+            });
+            setBlogs(blogs);
+            setTotalPages(Math.ceil(blogs.length / 4));
+        };
 
+        getBlogs();
+    }, [posts, setBlogs, setTotalPages]);
 
     return (
         <Layout>
@@ -38,7 +59,7 @@ const Blog = ({posts, blogArticles}) => {
                     <div className="container">
                         <div className="row row--40">
                             <div className="col-lg-8 col-md-12 col-12">
-                                {blogArticles?.map((post, index) => (
+                                {selectedBlogs?.map((post, index) => (
                                     <div
                                         key={`blog-post-${index}`}
                                         className={
@@ -57,13 +78,13 @@ const Blog = ({posts, blogArticles}) => {
                                     handleClick={handleClick}
                                 />
                             </div>
-                            {/* <div className="col-lg-4 col-md-12 col-12 mt_md--40 mt_sm--40">
+                            <div className="col-lg-4 col-md-12 col-12 mt_md--40 mt_sm--40">
                                 <BlogSidebar
                                     categories={getCategories(posts)}
                                     tags={getTags(posts)}
                                     recentPost={posts.slice(0, 3)}
                                 />
-                            </div> */}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -77,50 +98,30 @@ const Blog = ({posts, blogArticles}) => {
 export default Blog;
 
 export async function getStaticProps() {
-	const [blogsRes] = await Promise.all([
-	  fetchAPI("/blogs", {
-		populate: ["image"],
-		fields: ["title", "slug", "text"],
-		pagination: {
-		  pageSize: 6,
-		},
-		publicationState: "live",
-	  }),
-	]);
-  
-	return {
-	  props: {
-		blogArticles: blogsRes.data,
-	  },
-	  revalidate: 3600,
-	};
-  }
-// export async function getStaticProps() {
-//     // Get files from the post directory
-//     const files = fs.readdirSync(path.join("data/posts"));
+    // Get files from the post directory
+    const files = fs.readdirSync(path.join("data/posts"));
 
-//     // Get slug and postdata from posts
-//     const posts = files.map((filename) => {
-//         const slug = filename.replace(".md", "");
+    // Get slug and postdata from posts
+    const posts = files.map((filename) => {
+        const slug = filename.replace(".md", "");
 
-//         // Get postdata
-//         const mardownWithMeta = fs.readFileSync(
-//             path.join("data/posts", filename),
-//             "utf-8"
-//         );
+        // Get postdata
+        const mardownWithMeta = fs.readFileSync(
+            path.join("data/posts", filename),
+            "utf-8"
+        );
 
-//         const {data: postdata} = matter(mardownWithMeta);
+        const {data: postdata} = matter(mardownWithMeta);
 
-//         return {
-//             slug,
-//             postdata,
-//         };
-//     });
+        return {
+            slug,
+            postdata,
+        };
+    });
 
-//     return {
-//         props: {
-//             posts: posts,
-//         },
-//     };
-// }
-
+    return {
+        props: {
+            posts: posts,
+        },
+    };
+}

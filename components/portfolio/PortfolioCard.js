@@ -2,7 +2,7 @@ import {motion} from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import Tilt from 'react-parallax-tilt';
-import {slugify} from '../../helpers/utilities';
+import { getStrapiMedia } from "helpers/media";
 
 const PortfolioCard = ({data, index, activeIndex, changeActive}) => {
     const item = {
@@ -12,7 +12,7 @@ const PortfolioCard = ({data, index, activeIndex, changeActive}) => {
             opacity: 1,
         },
     };
-
+	console.log(data);
     return (
         <motion.div
             variants={item}
@@ -24,13 +24,14 @@ const PortfolioCard = ({data, index, activeIndex, changeActive}) => {
             <div className="inner">
                 <Tilt tiltMaxAngleX={9} tiltMaxAngleY={9}>
                     <div className="thumb">
-                        <Link href={`/portfolio/${slugify(data.title)}`}>
+                        <Link href={`/portfolio/${data.attributes.slug}`}>
                             <a>
                                 <Image
                                     width={400}
                                     height={380}
-                                    src={data.image}
-                                    alt={`${data.title} portfolio image`}
+                                    //src={data.image}
+									src={getStrapiMedia(data.attributes.image)}
+                                    alt={`${data.attributes.title} portfolio image`}
                                 />
                             </a>
                         </Link>
@@ -40,12 +41,12 @@ const PortfolioCard = ({data, index, activeIndex, changeActive}) => {
                 <div className="port-overlay-info">
                     <div className="hover-action">
                         <h4 className="title">
-                            <Link href={`/portfolio/${slugify(data.title)}`}>
-                                <a>{data.title}</a>
+                            <Link href={`/portfolio/${data.attributes.slug}`}>
+                                <a>{data.attributes.title}</a>
                             </Link>
                         </h4>
                         <span className="category">
-              {data.categories?.map((category, index) => {
+              			{data.categories?.map((category, index) => {
                   return category;
               })}
             </span>

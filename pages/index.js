@@ -28,7 +28,7 @@ const HomeFive = ({posts, contacts}) => {
     return (
         <Layout layoutSettings={layoutSettings}>
             <Head>
-                <title>Main Page || develop.software</title>
+                <title>Main Page || {process.env.NEXT_WEBSITE_NAME}</title>
             </Head>
 
             <main className="page-wrapper">

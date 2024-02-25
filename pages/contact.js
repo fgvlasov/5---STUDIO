@@ -4,8 +4,9 @@ import SectionTitle from "../components/common/SectionTitle";
 import ContactFormThree from "../components/forms/ContactFormThree";
 import Layout from "../components/layouts/Layout";
 import Image from "next/image";
+import { fetchAPI } from 'helpers/api';
 
-const Contact = () => {
+const Contact = ({contact}) => {
     return (
         <Layout>
             <Head>
@@ -44,8 +45,8 @@ const Contact = () => {
                                                     6:00 pm
                                                 </p>
                                                 <p>
-                                                    <a className="axil-link" href="tel:1234567890">
-                                                        (123) 456 7890
+                                                    <a className="axil-link" href={contact.attributes.PhoneLink}>
+                                                        {contact.attributes.Phone}
                                                     </a>
                                                 </p>
                                             </div>
@@ -70,9 +71,9 @@ const Contact = () => {
                                                 <p>
                                                     <a
                                                         className="axil-link"
-                                                        href="mailto:example@gmail.com"
+                                                        href={`mailto:${contact.attributes.Email}`}
                                                     >
-                                                        example@gmail.com
+                                                       {contact.attributes.Email}
                                                     </a>
                                                 </p>
                                             </div>
@@ -224,3 +225,18 @@ const Contact = () => {
 };
 
 export default Contact;
+
+export async function getStaticProps() {
+	const [contactRes] = await Promise.all([
+	  fetchAPI("/contact", {
+		fields: ["*"],
+	  }),
+	]);
+  
+	return {
+	  props: {
+		contact: contactRes.data,
+	  },
+	  revalidate: 3600,
+	};
+  }
