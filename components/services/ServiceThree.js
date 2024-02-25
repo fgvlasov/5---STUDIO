@@ -1,20 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import {useEffect, useState} from 'react';
-import ServiceData from '../../data/Services.json';
 import {camelCaseToDashed} from '../../helpers/utilities';
 import SectionTitle from '../common/SectionTitle';
+import { getStrapiMedia } from 'helpers/media';
 
-const ServiceThree = () => {
-    const [servicesOurValues, setServicesOurValues] = useState([]);
-
-    const getServicesByCategory = () => {
-        const ourValues = ServiceData.filter(
-            (service) => service.category === "Our values"
-        );
-
-        setServicesOurValues(ourValues);
-    };
+const ServiceThree = ({services}) => {
 
     const serviceColor = (index) => {
         if (index === 1) return "color-var--2"
@@ -24,11 +14,6 @@ const ServiceThree = () => {
         else if (index === 5) return "color-var--2"
         else ""
     }
-
-    useEffect(() => {
-        getServicesByCategory();
-    }, []);
-
     return (
         <div className="axil-service-area ax-section-gap bg-color-lightest">
             <div className="container">
@@ -44,30 +29,32 @@ const ServiceThree = () => {
                     </div>
                 </div>
                 <div className="row">
-                    {servicesOurValues?.map((service, index) => (
+                    {services?.map((service, index) => (
                         <div className="col-lg-4 col-md-6 col-12 mt--50 mt_md--40 mt_sm--30" key={`service-${index}`}>
                             <div
                                 className={`axil-service-style--3 ${serviceColor(index)}`}
                             >
-                                <div className="icon">
+                                {service.attributes.image && (
+								<div className="icon">
                                     <Image
                                         width={50}
                                         height={49}
-                                        src={service.imageLayer}
+										src={getStrapiMedia(service.attributes.image)}
                                         alt="Icon Images"
                                         layout="fixed"
                                     />
                                     <div className="text">{index + 1}</div>
                                 </div>
+								)}
                                 <div className="content">
                                     <h4 className="title">
                                         <Link
-                                            href={`/services/${camelCaseToDashed(service.category)}/${service.slug}`}
+                                            href={`/services/${camelCaseToDashed(service.attributes.categories.data[0].attributes.title)}/${service.attributes.slug}`}
                                         >
-                                            {service.title}
+                                            {service.attributes.title}
                                         </Link>
                                     </h4>
-                                    <p>{service.description}</p>
+                                    <p>{service.attributes.description}</p>
                                 </div>
                             </div>
                         </div>

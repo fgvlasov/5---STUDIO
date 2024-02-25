@@ -45,7 +45,7 @@ const Contact = ({contact}) => {
                                                     6:00 pm
                                                 </p>
                                                 <p>
-                                                    <a className="axil-link" href={contact.attributes.PhoneLink}>
+                                                    <a className="axil-link" href={`tel:${contact.attributes.PhoneLink}`}>
                                                         {contact.attributes.Phone}
                                                     </a>
                                                 </p>

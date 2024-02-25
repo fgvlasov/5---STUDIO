@@ -10,12 +10,14 @@ import WorkingProcess from '../components/services/WorkingProcess';
 import TeamOne from '../components/teams/TeamOne';
 import CaseStudyData from '../data/CaseStudies.json';
 import {slugify} from '../helpers/utilities';
+import { fetchAPI } from 'helpers/api';
 
-const About = () => {
+const About = ({aboutContent, services}) => {
     const [ref, inView] = useInView({
         threshold: 0.3,
         triggerOnce: true,
     });
+console.log(services);
 
     const workingProcess = {
         title: "Our execution process",
@@ -142,7 +144,7 @@ const About = () => {
                     </div>
                 </div>
 
-                <ServiceThree/>
+                <ServiceThree services={services}/>
 
                 <TeamOne/>
 
@@ -153,3 +155,28 @@ const About = () => {
 };
 
 export default About;
+
+export async function getStaticProps() {
+	const [aboutRes, servicesRes] = await Promise.all([
+	  fetchAPI("/about", {
+		fields: ["*"],
+
+	  }),
+	  fetchAPI("/services", {
+		fields: ["*"],
+		populate: ["categories"],
+		filters: { categories: {
+			id: { $eq: 1 }
+		  }
+		 }, 
+	  })
+	]);
+  
+	return {
+	  props: {
+		aboutContent: aboutRes.data,
+		services: servicesRes.data,
+	  },
+	  revalidate: 3600,
+	};
+  }
