@@ -6,7 +6,7 @@ import SectionTitle from '../common/SectionTitle';
 import PortfolioCard from './PortfolioCard';
 import PortfolioFilter from './PortfolioFilter';
 
-const PortfolioOne = ({bgColor = "bg-color-lightest"}) => {
+const PortfolioOne = ({bgColor = "bg-color-lightest", projects}) => {
     const [activePortfolio, setActivePortfolio] = useState(0);
     const [filterdPortfolioData, setFilterdPortfolioData] = useState([]);
     const [activeGenre, setActiveGenre] = useState(0);
@@ -28,7 +28,8 @@ const PortfolioOne = ({bgColor = "bg-color-lightest"}) => {
     };
 
     useEffect(() => {
-        setFilterdPortfolioData(PortfolioData);
+        //setFilterdPortfolioData(PortfolioData);
+		setFilterdPortfolioData(projects);
     }, []);
 
     return (
@@ -46,7 +47,8 @@ const PortfolioOne = ({bgColor = "bg-color-lightest"}) => {
                     </div>
                     <div className="col-lg-7 col-md-12 mt_md--20 mt_sm--20">
                         <PortfolioFilter
-                            portfolio={PortfolioData}
+                            //portfolio={PortfolioData}
+							portfolio={projects}
                             setFilterdPortfolioData={setFilterdPortfolioData}
                             activeGenre={activeGenre}
                             setActiveGenre={setActiveGenre}

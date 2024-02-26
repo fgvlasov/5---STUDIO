@@ -6,16 +6,10 @@ import qs from "qs";
  * @returns {string} Full Strapi URL
  */
 export function getStrapiURL(path = "") {
-  //return `${process.env.NEXT_ADMIN_LINK}${path}`;
-  const baseUrl = process.env.NEXT_ADMIN_LINK || "http://localhost:1337";
-
-  // Check if the path is already an absolute URL
-  if (path.startsWith("http://") || path.startsWith("https://")) {
-    return path;
+	return `${
+	  process.env.NEXT_ADMIN_LINK || "https://inv.ptzsite.ru"
+	}${path}`;
   }
-
-  return `${baseUrl}${path}`;
-}
 
 /**
  * Helper to make GET requests to Strapi API endpoints
@@ -39,7 +33,7 @@ export async function fetchAPI(path, urlParamsObject = {}, options = {}) {
   const requestUrl = `${getStrapiURL(
     `/api${path}${queryString ? `?${queryString}` : ""}`
   )}`;
-  console.log(requestUrl);
+
 
   const response = await fetch(requestUrl, mergedOptions);
   // Handle response
