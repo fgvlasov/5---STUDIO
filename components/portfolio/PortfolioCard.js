@@ -12,7 +12,8 @@ const PortfolioCard = ({data, index, activeIndex, changeActive}) => {
             opacity: 1,
         },
     };
-	console.log(data);
+	//console.log(data);
+	
     return (
         <motion.div
             variants={item}
