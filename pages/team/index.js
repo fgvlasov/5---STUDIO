@@ -8,31 +8,32 @@ import TeamMember from '../../components/teams/TeamMember';
 import TeamData from '../../data/Team.json';
 import {flatDeep} from '../../helpers/utilities';
 import Image from "next/image";
+import { fetchAPI } from 'helpers/api';
 
 const Team = () => {
-    const [isWindow, setIsWindow] = useState(false);
-    const [departments, setDepartments] = useState([]);
-    const [activeDepartment, setActiveDepartment] = useState(0);
+    // const [isWindow, setIsWindow] = useState(false);
+    // const [departments, setDepartments] = useState([]);
+    // const [activeDepartment, setActiveDepartment] = useState(0);
 
-    const getDepartments = () => {
-        let allDepartments = TeamData.map((item) => item.department),
-            singleDepartmentArray = flatDeep(allDepartments),
-            departments = "";
+    // const getDepartments = () => {
+    //     let allDepartments = TeamData.map((item) => item.department),
+    //         singleDepartmentArray = flatDeep(allDepartments),
+    //         departments = "";
 
-        departments = singleDepartmentArray.reduce((a, b) => {
-            if (a.indexOf(b) < 0) {
-                a.push(b);
-            }
-            return a;
-        }, []);
+    //     departments = singleDepartmentArray.reduce((a, b) => {
+    //         if (a.indexOf(b) < 0) {
+    //             a.push(b);
+    //         }
+    //         return a;
+    //     }, []);
 
-        setDepartments(departments);
-    };
+    //     setDepartments(departments);
+    // };
 
-    useEffect(() => {
-        getDepartments();
-        setIsWindow(true);
-    }, []);
+    // useEffect(() => {
+    //     getDepartments();
+    //     setIsWindow(true);
+    // }, []);
 
     return (
         <Layout>
@@ -257,3 +258,23 @@ const Team = () => {
 };
 
 export default Team;
+
+export async function getStaticProps() {
+	const [projectsRes] = await Promise.all([
+	  fetchAPI("/team-mates", {
+		populate: ["image"],
+		fields: ["title", "slug", "description"],
+		pagination: {
+		  pageSize: 6,
+		},
+		publicationState: "live",
+	  }),
+	]);
+  
+	return {
+	  props: {
+		projects: projectsRes.data,
+	  },
+	  revalidate: 3600,
+	};
+  }

@@ -57,7 +57,7 @@ const ServiceDetails = ({service}) => {
 
                 <WorkingProcess process={service.process}/>
 
-                <PortfolioTwo/>
+                {/* <PortfolioTwo/> */}
 
                 <CallToActionOne/>
             </div>
