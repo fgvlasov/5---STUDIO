@@ -1,11 +1,11 @@
 import { DateTime } from "luxon";
 
-const camelCaseToDashed = (string) => {
+export const camelCaseToDashed = (string) => {
   const dashedString = string.replace(/\s+/g, "-").toLowerCase();
   return dashedString;
 };
 
-const flatDeep = (arr, d = 1) =>
+export const flatDeep = (arr, d = 1) =>
   d > 0
     ? arr.reduce(
         (acc, val) =>
@@ -14,7 +14,7 @@ const flatDeep = (arr, d = 1) =>
       )
     : arr.slice();
 
-const slugify = (text) => {
+export const slugify = (text) => {
   return text
     .toString()
     .toLowerCase()
@@ -36,7 +36,7 @@ const containsObject = (obj, list) => {
   return -1;
 };
 
-const getCategories = (blogs) => {
+export const getCategories = (blogs) => {
   let allPosts = blogs.map((item) => item.postdata),
     cats = allPosts.map((item) => item.categories),
     singleCatArray = flatDeep(cats),
@@ -66,7 +66,7 @@ const getCategories = (blogs) => {
   return categories;
 };
 
-const getTags = (blogs) => {
+export const getTags = (blogs) => {
   let allPosts = blogs.map((item) => item.postdata),
     allTags = allPosts.map((item) => item.tags),
     singleTagArray = flatDeep(allTags),
@@ -96,7 +96,7 @@ const getTags = (blogs) => {
   return tags;
 };
 
-const sortingByDate = function (posts) {
+export const sortingByDate = function (posts) {
   return posts.sort((a, b) => {
     const beforeDate = DateTime.fromFormat(a.postdata.publishedAt, "LLL dd yyyy");
     const afterDate = DateTime.fromFormat(b.postdata.publishedAt, "LLL dd yyyy");
