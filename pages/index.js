@@ -13,7 +13,7 @@ import ServiceTwo from '../components/services/ServiceTwo';
 import TeamOne from '../components/teams/TeamOne';
 import TestimonialOne from '../components/testimonials/TestimonialOne';
 
-const HomeFive = ({posts, contacts}) => {
+const HomeFive = ({posts, contacts, projects}) => {
     const layoutSettings = {
         header: {
             style: "two",
@@ -36,7 +36,7 @@ const HomeFive = ({posts, contacts}) => {
 
                 <ServiceTwo/>
 
-                <PortfolioOne/>
+                <PortfolioOne projects={projects}/>
 
                 <CounterOne/>
 
@@ -74,20 +74,28 @@ export async function getStaticProps() {
         };
     });
 
-	const [
-		contactRes
-	  ] = await Promise.all([
+	const [ contactRes, projectsRes ] = await Promise.all([
 		fetchAPI("/contact", {
 		  fields: "*",
 		  populate: ["Seo", "ContactSocials"],
 		}),
+		fetchAPI("/portfolios", {
+			populate: ["image"],
+			fields: ["title", "slug", "description"],
+			pagination: {
+			  pageSize: 6,
+			},
+			publicationState: "live",
+		  }),
 		
 	  ]);
+
 
     return {
         props: {
             posts: posts,
 			contacts: contactRes.data,
+			projects: projectsRes.data,
         },
 		revalidate: 3600,
     };

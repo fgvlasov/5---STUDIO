@@ -38,7 +38,7 @@ const ServiceTwo = () => {
   if (!data) {
     return false;
   } else {
-	console.log(data);
+	//console.log(data);
   }
 
   return (

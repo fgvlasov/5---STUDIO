@@ -2,7 +2,7 @@ import Link from 'next/link';
 import ContactFormOne from '../forms/ContactFormOne';
 
 const BannerFive = ({contacts}) => {
-	console.log(contacts);
+	//console.log(contacts);
     
 	return (
         <div className="axil-slider-area axil-slide-activation position-relative">

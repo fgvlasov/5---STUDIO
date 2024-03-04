@@ -22,6 +22,7 @@ const PortfolioOne = ({bgColor = "bg-color-lightest", projects}) => {
             },
         },
     };
+	console.log(projects);
 
     const changeActive = (index) => {
         setActivePortfolio(index);
