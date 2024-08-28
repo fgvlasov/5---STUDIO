@@ -21,8 +21,8 @@ const ServiceThree = ({services}) => {
                     <div className="col-lg-12">
                         <SectionTitle
                             title="Why should you work with us?"
-                            subtitle="our valus"
-                            description="Nulla facilisi. Nullam in magna id dolor blandit rutrum eget vulputate augue sed eu leo eget risus imperdiet."
+                            subtitle="our values"
+                            description="Empowering your vision: Customized web solutions tailored for success"
                             color="extra08-color"
                             alignment="center"
                         />
