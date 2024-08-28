@@ -20,47 +20,47 @@ const About = ({aboutContent, services}) => {
 console.log(services);
 
     const workingProcess = {
-        title: "Our execution process",
-        description:
-            "Our comprehensive design strategy ensures a perfectly crafted design for your business.",
-        strategies: [
-            {
-                id: 1,
-                title: "Discover",
-                subtitle: "our four step process",
-                description:
-                    "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
-                highlightColor: "extra04-color",
-                image: "/images/process/process-01.jpg",
-            },
-            {
-                id: 2,
-                title: "Prototype",
-                subtitle: "our four step process",
-                description:
-                    "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
-                highlightColor: "extra05-color",
-                image: "/images/process/process-02.jpg",
-            },
-            {
-                id: 3,
-                title: "Test",
-                subtitle: "our four step process",
-                description:
-                    "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
-                highlightColor: "extra06-color",
-                image: "/images/process/process-03.jpg",
-            },
-            {
-                id: 4,
-                title: "Build",
-                subtitle: "our four step process",
-                description:
-                    "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
-                highlightColor: "extra07-color",
-                image: "/images/process/process-04.jpg",
-            },
-        ],
+      title: 'Our execution process',
+      description:
+        'Our comprehensive design strategy ensures a perfectly crafted design for your business.',
+      strategies: [
+        {
+          id: 1,
+          title: 'Discover',
+          subtitle: 'our four step process',
+          description:
+            'In the Discover phase, we immerse ourselves in your vision and requirements. Our team conducts thorough market research and analysis to ensure a deep understanding of your target audience and competitors. This foundational step is about aligning our strategy with your business goals to tailor a solution that fits your unique needs.',
+          highlightColor: 'extra04-color',
+          image: '/images/process/process-001.jpg',
+        },
+        {
+          id: 2,
+          title: 'Prototype',
+          subtitle: 'our four step process',
+          description:
+            'Once we have a clear understanding, we move into the Prototype phase. Here, we create interactive prototypes that provide a visual and functional preview of your application. This stage allows us to refine user interfaces and user experience details, ensuring that the design is not only aesthetically pleasing but also user-friendly and functional.',
+          highlightColor: 'extra05-color',
+          image: '/images/process/process-002.jpg',
+        },
+        {
+          id: 3,
+          title: 'Test',
+          subtitle: 'our four step process',
+          description:
+            'Testing is crucial to our process. In this phase, we rigorously test the prototype to identify any usability issues or bugs. Our comprehensive testing includes functionality tests, user experience tests, and performance tests to ensure the application is robust and ready for launch. This phase helps in making sure that the final product is stable and operates seamlessly across all devices and platforms.',
+          highlightColor: 'extra06-color',
+          image: '/images/process/process-003.jpg',
+        },
+        {
+          id: 4,
+          title: 'Build',
+          subtitle: 'our four step process',
+          description:
+            'The Build phase is where everything comes together. Our developers use clean, scalable, and efficient code to turn the prototype into a fully functioning application. We follow best practices in software development to ensure high quality and maintainability. Throughout this phase, we keep you updated with progress, and we adapt quickly to any changes without compromising on quality.',
+          highlightColor: 'extra07-color',
+          image: '/images/process/process-004.jpg',
+        },
+      ],
     };
 
     return (
