@@ -21,8 +21,8 @@ const ServiceThree = ({services}) => {
                     <div className="col-lg-12">
                         <SectionTitle
                             title="Why should you work with us?"
-                            subtitle="our valus"
-                            description="Nulla facilisi. Nullam in magna id dolor blandit rutrum eget vulputate augue sed eu leo eget risus imperdiet."
+                            subtitle="our values"
+                            description="Empowering your vision: Customized web solutions tailored for success"
                             color="extra08-color"
                             alignment="center"
                         />
@@ -34,18 +34,18 @@ const ServiceThree = ({services}) => {
                             <div
                                 className={`axil-service-style--3 ${serviceColor(index)}`}
                             >
-                                {service.attributes.image && (
+                                
 								<div className="icon">
                                     <Image
                                         width={50}
                                         height={49}
-										src={getStrapiMedia(service.attributes.image)}
+										src="/images/icons/layer.svg"
                                         alt="Icon Images"
                                         layout="fixed"
                                     />
                                     <div className="text">{index + 1}</div>
                                 </div>
-								)}
+
                                 <div className="content">
                                     <h4 className="title">
                                         <Link

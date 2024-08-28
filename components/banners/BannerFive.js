@@ -2,8 +2,9 @@ import Link from 'next/link';
 import ContactFormOne from '../forms/ContactFormOne';
 
 const BannerFive = ({contacts}) => {
-	console.log(contacts)
-    return (
+	//console.log(contacts);
+    
+	return (
         <div className="axil-slider-area axil-slide-activation position-relative">
             <div className="axil-slide slide-style-5 theme-gradient-8 d-flex align-items-center">
                 <div className="container">
